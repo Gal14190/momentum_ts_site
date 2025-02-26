@@ -1,3 +1,12 @@
+# firebase deploy
+1. firebase login
+2. npm run build
+3. deploy
+3.1 pre-prodution: 
+firebase hosting:channel:deploy 2
+3.2 prodution:
+firebase deploy
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

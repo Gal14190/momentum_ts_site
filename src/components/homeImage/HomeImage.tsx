@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import classes from './homeImage.module.css'
-import hebrew from '../../assets/images/momentumHe.jpg'
-import english from '../../assets/images/momentumEn.jpg'
+import hebrew from '../../assets/images/momentumHe.png'
+import english from '../../assets/images/momentumEn.png'
 
 const HomeImage = () => {
     const [lang, setLang] = useState<"he" | "en">("en")

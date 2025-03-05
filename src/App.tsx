@@ -1,6 +1,6 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import HomePage from "./pages/homepage/HomePage";
-// import MainLayOut from "./layouts/mainLayOut/MainLayOut";
+import MainLayOut from "./layouts/mainLayOut/MainLayOut";
 
 function App() {
   return (
@@ -8,15 +8,17 @@ function App() {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      <Routes>
+      <div className="routes">
+        <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="*" element={<div>404 not found</div>} />
-        {/* <Route path="/" element={<MainLayOut children={<Outlet />} />} >
-          <Route path="/" element={<HomePage />} />
-          <Route path="*" element={<div>404 not found</div>} />
-        </Route> */}
-        {/* <Route path="/" /> */}
-      </Routes>
+          {/* <Route path="/" element={<MainLayOut children={<Outlet />} />} >
+            <Route path="/" element={<HomePage />} />
+            <Route path="*" element={<div>404 not found</div>} />
+          </Route> */}
+          {/* <Route path="/" /> */}
+        </Routes>
+      </div>
     </div>
   );
 }

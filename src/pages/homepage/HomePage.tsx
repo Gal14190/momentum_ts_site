@@ -1,11 +1,11 @@
 import HomeImage from '../../components/homeImage/HomeImage';
-// import classes from './homePage.module.css'
+import classes from './homePage.module.css'
 
 function HomePage() {
   return (
-    // <div className={classes.container}>
+    <div className={classes.container}>
       <HomeImage/>
-    // </div>
+    </div>
   );
 }
 

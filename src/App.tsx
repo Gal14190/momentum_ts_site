@@ -9,10 +9,8 @@ function App() {
       <div id="stars2"></div>
       <div id="stars3"></div>
       <Routes>
-        {/* <Route path="/" element={<MainLayOut children={<Outlet />} />} > */}
           <Route path="/" element={<HomePage />} />
           <Route path="*" element={<div>404 not found</div>} />
-        {/* </Route> */}
         {/* <Route path="/" element={<MainLayOut children={<Outlet />} />} >
           <Route path="/" element={<HomePage />} />
           <Route path="*" element={<div>404 not found</div>} />

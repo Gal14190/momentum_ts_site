@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  max-height: 100dvh;
   overflow: hidden;
   font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -124,6 +125,15 @@ body {
   /* Background for modal overlays */
   --disabled-opacity: 0.5;
   /* Opacity for disabled elements */
+}
+
+.routes {
+  position: absolute;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 #stars {

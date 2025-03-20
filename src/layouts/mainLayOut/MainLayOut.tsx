@@ -5,7 +5,9 @@ import MainLayOutNavBar from "./mainLayOutNavBar/MainLayOutNavBar";
 const MainLayOut: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   return <>
     <MainLayOutNavBar />
-    <div className={classes.mainContainer}>{children}</div>;
+    <div className={classes.mainContainer}>
+      {children}
+    </div>
   </>
 };
 

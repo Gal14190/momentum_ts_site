@@ -1,6 +1,7 @@
 .mainContainer {
   width: 80%;
-  height: 80vh;
+  height: auto;
+  max-height: 90vh;
   padding: 1rem;
   margin: auto;
   margin-top: 10vh;
@@ -21,7 +22,7 @@
 @media (min-width: 2560px) {
   .mainContainer {
     width: 70%;
-    height: 85vh;
+    height: 90vh;
     font-size: 2rem;
   }
 }

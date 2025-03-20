@@ -1,0 +1,223 @@
+.navbar {
+     position: absolute;
+     top: 0;
+     left: 10%;
+     width: 80%;
+     height: 5dvh;
+     background: rgba(200, 200, 200, 0.2);
+     backdrop-filter: blur(2px);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 12px 24px;
+     border-radius: 0 0 1.5rem 1.5rem;
+     z-index: 1;
+     transition: all 0.3s ease-in-out;
+}
+
+.menuButton {
+     transition: all 0.3s ease-in-out;
+     display: none;
+}
+
+.links {
+     display: flex;
+     gap: 16px;
+}
+
+.link {
+     font-size: large;
+     cursor: pointer;
+     background: none;
+     border: none;
+     color: white;
+     text-decoration: none;
+     transition: color 0.2s ease;
+}
+
+.link:hover {
+     color: #7dc8ff;
+}
+
+.activeLink {
+     color: #7dc8ff;
+}
+
+.userInfo {
+     color: white;
+     font-weight: bold;
+}
+
+.curved1, .curved2 {
+     position: absolute;
+     top: 0;
+     width: 25px;
+     height: 25px;
+     background: rgba(200, 200, 200, 0.2);
+     backdrop-filter: blur(2px);
+     transition: all 0.3s ease-in-out;
+}
+
+.curved1 {
+     right: calc(10% - 25px);
+     -webkit-mask-image: radial-gradient(circle at 100% 100%, transparent 75%, rgba(0, 0, 0, 1) 75.001%);
+     mask-image: radial-gradient(circle at 100% 100%, transparent 75%, rgba(0, 0, 0, 1) 75.1%);
+}
+
+.curved2 {
+     left: calc(10% - 25px);
+     -webkit-mask-image: radial-gradient(circle at 0 100%, transparent 75%, rgba(0, 0, 0, 1) 75.001%);
+     mask-image: radial-gradient(circle at 0 100%, transparent 75%, rgba(0, 0, 0, 1) 75.1%);
+}
+
+@media (min-width: 2560px) {
+     .navbar {
+          width: 70%;
+          left: 15%;
+     }
+
+     .curved1 {
+          right: calc(15% - 25px);
+     }
+
+     .curved2 {
+          left: calc(15% - 25px);
+     }
+}
+
+@media (max-width: 1440px) {
+     .navbar {
+          width: 75%;
+          left: 12.5%;
+     }
+
+     .curved1 {
+          right: calc(12.5% - 25px);
+     }
+
+     .curved2 {
+          left: calc(12.5% - 25px);
+     }
+}
+
+@media (max-width: 1024px) {
+     .navbar {
+          width: 85%;
+          left: 7.5%;
+     }
+
+     .curved1 {
+          right: calc(7.5% - 25px);
+     }
+
+     .curved2 {
+          left: calc(7.5% - 25px);
+     }
+}
+
+@media (max-width: 900px) {
+     .navbar {
+          width: 90%;
+          left: 5%;
+     }
+
+     .curved1 {
+          right: calc(5% - 25px);
+     }
+
+     .curved2 {
+          left: calc(5% - 25px);
+     }
+}
+
+@media (max-width: 768px) {
+     .navbar {
+          position: fixed;
+          top: -100%;
+          left: 2.5%;
+          width: 95%;
+          height: 40vh;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: start;
+          background: rgba(73, 73, 73, 0.6);
+          backdrop-filter: blur(10px);
+          transition: all 0.3s ease-in-out;
+          box-shadow: 0px 4px 15px rgb(0, 0, 0);
+          text-shadow: 0 2px 15px #000000;
+     }
+
+     .links {
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+     }
+
+     .navbarOpen {
+          top: 0;
+     }
+
+     .menuButton {
+          display: block;
+          position: fixed;
+          top: 10px;
+          left: 5%;
+          background: none;
+          border: none;
+          font-size: 24px;
+          color: white;
+          cursor: pointer;
+          z-index: 10;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 6px;
+     }
+
+     .line {
+         width: 30px;
+         height: 4px;
+         background: white;
+         border-radius: 4px;
+         transition: all 0.3s ease-in-out;
+     }
+
+     .menuButtonOpen .lineTop {
+         transform: rotate(45deg) translate(5px, 5px);
+     }
+     
+     .menuButtonOpen .lineMiddle {
+         opacity: 0;
+     }
+     
+     .menuButtonOpen .lineBottom {
+         transform: rotate(-45deg) translate(5px, -5px);
+     }
+
+     .curved1 {
+          top: -100%;
+          right: calc(2.5% - 25px);
+     }
+
+     .curved2 {
+          top: -100%;
+          left: calc(2.5% - 25px);
+     }
+}
+
+@media (max-width: 600px) {
+     .navbar {
+          width: 96%;
+          left: 2%;
+     }
+}
+
+@media (max-width: 480px) {
+     .navbar {
+          width: 98%;
+          left: 1%;
+     }
+}

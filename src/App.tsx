@@ -10,12 +10,12 @@ function App() {
       <div id="stars3"></div>
       <div className="routes">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="*" element={<div>404 not found</div>} />
-          {/* <Route path="/" element={<MainLayOut children={<Outlet />} />} >
+          {/* <Route path="/" element={<HomePage />} />
+          <Route path="*" element={<div>404 not found</div>} /> */}
+          <Route path="/" element={<MainLayOut children={<Outlet />} />} >
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={<div>404 not found</div>} />
-          </Route> */}
+          </Route>
           {/* <Route path="/" /> */}
         </Routes>
       </div>

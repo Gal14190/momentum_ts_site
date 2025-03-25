@@ -32,7 +32,7 @@
      border: none;
      color: white;
      text-decoration: none;
-     transition: color 0.2s ease;
+     transition: all 0.2s ease;
 }
 
 .link:hover {
@@ -178,23 +178,23 @@
      }
 
      .line {
-         width: 30px;
-         height: 4px;
-         background: white;
-         border-radius: 4px;
-         transition: all 0.3s ease-in-out;
+          width: 30px;
+          height: 4px;
+          background: white;
+          border-radius: 4px;
+          transition: all 0.3s ease-in-out;
      }
 
      .menuButtonOpen .lineTop {
-         transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
      }
-     
+
      .menuButtonOpen .lineMiddle {
-         opacity: 0;
+          opacity: 0;
      }
-     
+
      .menuButtonOpen .lineBottom {
-         transform: rotate(-45deg) translate(5px, -5px);
+          transform: rotate(-45deg) translate(5px, -5px);
      }
 
      .curved1 {
@@ -219,5 +219,21 @@
      .navbar {
           width: 98%;
           left: 1%;
+     }
+}
+
+@media (max-height: 768px) {
+     .link{
+          font-size: medium;
+     }
+
+     .curved1, .curved2 {
+          visibility: hidden;
+     }
+}
+
+@media (max-height: 600px) {
+     .link{
+          font-size: small;
      }
 }

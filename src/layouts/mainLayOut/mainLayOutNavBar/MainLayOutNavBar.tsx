@@ -24,8 +24,8 @@ const MainLayOutNavBar = () => {
 
      const links = [
           { path: "/", label: "Home" },
-          { path: "/about", label: "About Us" },
-          { path: "/contact", label: "Contact" },
+          // { path: "/about", label: "About Us" },
+          // { path: "/contact", label: "Contact" },
      ];
 
      return (

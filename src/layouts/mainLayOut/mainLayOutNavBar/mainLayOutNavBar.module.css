@@ -224,7 +224,7 @@
 }
 
 @media (max-height: 768px) {
-     .link{
+     .link {
           font-size: medium;
      }
 
@@ -234,7 +234,28 @@
 }
 
 @media (max-height: 600px) {
-     .link{
+     .link {
           font-size: small;
+     }
+}
+
+@media (max-height: 460px) {
+     .menuButton {
+          width: 30px;
+          height: 30px;
+          top: 5dvh;
+          left: calc(5% + 10px);
+     }
+
+     .line {
+          width: 25px;
+          height: 3px;
+          background: white;
+          border-radius: 3px;
+          transition: all 0.3s ease-in-out;
+     }
+
+     .navbar {
+          padding-left: calc(10% + 30px);
      }
 }

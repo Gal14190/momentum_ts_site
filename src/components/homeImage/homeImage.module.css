@@ -12,7 +12,7 @@
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -30,4 +30,18 @@
   width: auto;
   height: auto;
   object-fit: contain;
+}
+
+@media (max-height: 500px), (max-width: 768px) {
+  .switchButton {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-height: 300px) {
+  .switchButton {
+    font-size: 12px;
+    padding: 1px 6px;
+  }
 }

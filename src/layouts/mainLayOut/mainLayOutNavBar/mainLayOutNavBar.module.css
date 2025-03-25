@@ -137,6 +137,7 @@
           left: 2.5%;
           width: 95%;
           height: 40vh;
+          padding-top: 5dvh;
           flex-direction: column;
           justify-content: space-evenly;
           align-items: start;

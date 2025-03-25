@@ -1,16 +1,20 @@
 .mainContainer {
   width: 80%;
-  height: 80vh;
-  padding: 1rem;
+  height: 90dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
   margin: auto;
   margin-top: 10vh;
-  background: rgba(200, 200, 200, 0.2);
-  backdrop-filter: blur(4px);
+
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  backdrop-filter: blur(4px);
+  background: rgba(200, 200, 200, 0.2);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -21,7 +25,7 @@
 @media (min-width: 2560px) {
   .mainContainer {
     width: 70%;
-    height: 85vh;
+    height: 90vh;
     font-size: 2rem;
   }
 }

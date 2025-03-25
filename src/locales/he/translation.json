@@ -1,0 +1,380 @@
+{
+  "welcome": "ברוך הבא",
+  "language": "שפה",
+  "home": "בית",
+  "about": "אודות",
+  "contact": "צור קשר",
+  "login": "התחברות",
+  "logout": "התנתקות",
+  "signup": "הרשמה",
+  "profile": "פרופיל",
+  "settings": "הגדרות",
+  "help": "עזרה",
+  "search": "חיפוש",
+  "save": "שמירה",
+  "add": "הוסף",
+  "cancel": "ביטול",
+  "submit": "שלח",
+  "delete": "מחק",
+  "update": "עדכון",
+  "edit": "ערוך",
+  "confirm": "אישור",
+  "yes": "כן",
+  "no": "לא",
+  "emptyAlert":"אין התראות",
+  "next": "הבא",
+  "previous": "הקודם",
+  "error": "שגיאה",
+  "success": "הצלחה",
+  "loading": "טוען...",
+  "no_results": "לא נמצאו תוצאות",
+  "please_wait": "אנא המתן...",
+  "language_english": "אנגלית",
+  "language_hebrew": "עברית",
+  "language_russian": "רוסית",
+  "language_change": "שנה שפה",
+  "welcome_message": "ברוך הבא לאפליקציה שלנו!",
+  "page_not_found": "הדף לא נמצא",
+  "go_back": "חזור",
+  "dashboard": "לוח בקרה",
+  "notifications": "התראות",
+  "messages": "הודעות",
+  "new_message": "הודעה חדשה",
+  "view_all": "הצג הכל",
+  "read_more": "קרא עוד",
+  "close": "סגור",
+  "retry": "נסה שוב",
+  "download": "הורדה",
+  "upload": "העלאה",
+  "add_new": "הוסף חדש",
+  "remove": "הסר",
+  "details": "פרטים",
+  "home_title": "ברוך הבא לפלטפורמה שלנו",
+  "about_description": "למד עוד עלינו",
+  "contact_us": "צור קשר",
+  "terms_conditions": "תנאים והגבלות",
+  "privacy_policy": "מדיניות פרטיות",
+  "logout_confirmation": "האם אתה בטוח שברצונך להתנתק?",
+  "welcome_back": "ברוך שובך!",
+  "forgot_password": "שכחת סיסמה?",
+  "reset_password": "אפס סיסמה",
+  "email": "אימייל",
+  "password": "סיסמה",
+  "username": "שם משתמש",
+  "new_user": "משתמש חדש?",
+  "create_account": "צור חשבון",
+  "invalid_credentials": "שם משתמש או סיסמה שגויים",
+  "account_settings": "הגדרות חשבון",
+  "theme": "ערכת נושא",
+  "dark_mode": "מצב כהה",
+  "light_mode": "מצב בהיר",
+  "feedback": "משוב",
+  "send_feedback": "שלח משוב",
+  "thank_you": "תודה!",
+  "back_to_home": "חזרה לעמוד הבית",
+  "view_profile": "הצג פרופיל",
+  "logout_message": "התנתקת בהצלחה",
+  "welcome_admin": "ברוך הבא, מנהל",
+  "user_management": "ניהול משתמשים",
+  "create": "צור",
+  "view": "הצג",
+  "update_profile": "עדכן פרופיל",
+  "notification_settings": "הגדרות התראות",
+  "language_settings": "הגדרות שפה",
+  "security_settings": "הגדרות אבטחה",
+  "account_security": "אבטחת חשבון",
+  "recent_activities": "פעילויות אחרונות",
+  "access_denied": "אין גישה",
+  "404_message": "הדף שחיפשת אינו קיים.",
+  "no_permission": "אין לך הרשאה לגשת לדף",
+  "invalidData": "נתונים לא תקינים",
+  "areYouSure": "האם אתה בטוח?",
+  "Areas":"אזורים",
+  "changesWillNotBeSaved": "כל השינויים שלך לא יישמרו!",
+  "saved": "נשמר!",
+  "notSaved": "השינויים לא נשמרו",
+  "noActionsAvailable": "אין פעולות זמינות",
+  "enter": "הכנס",
+  "done": "סיום",
+  "unknown": "לא ידוע",
+  "chooseRole": "בחר תפקיד",
+  "roleSuperAdmin": "מנהל על",
+  "roleLocalAdmin": "מנהל מקומי",
+  "roleUser": "משתמש",
+  "chooseArea": "בחר אזור",
+  "alreadyConnected": "אתה מחובר",
+  "haveAnotherAccount": "יש לך חשבון אחר?",
+  "role": "תפקיד",
+  "userNotFound": "משתמש לא נמצא",
+  "please": "בבקשה",
+  "signIn": "התחברות",
+  "userInterface": "ממשק משתמש",
+  "currentUser": "משתמש נוכחי:",
+  "createUser": "צור משתמש",
+  "usersTable": "טבלת משתמשים",
+  "users":"משתמשים",
+   "mapURL":"חיבור מפות",
+  "advanced":"מתקדם",
+  "send": "שלח",
+  "local-admin": "מנהל מקומי",
+  "super-admin": "מנהל על",
+  "user": "משתמש",
+  "id": "מספר זיהוי",
+  "location": "מיקום",
+  "actions": "פעולות",
+  "live": "בשידור חי",
+  "delay": "עיכוב",
+  "copy": "העתק",
+  "dataCopied": "הנתונים הועתקו ללוח!",
+  "copyError": "שגיאה בהעתקת נתונים ללוח",
+  "invalidObject": "אובייקט לא חוקי",
+  "true": "אמת",
+  "false": "לא אמת",
+  "warning": "אזהרה",
+  "uploadFile": "העלה קובץ",
+  "areYouSureDeleteAll": "האם אתה בטוח שברצונך למחוק הכל?",
+  "noAreaToUser": "אין איזורים זמינים, צור איזור חדש בשביל המשתמש",
+  "ip": "כתובת IP",
+  "wifiPassword": "סיסמת WiFi",
+  "signalStrength": "עוצמת אות",
+  "locations": "מיקומים",
+  "latitude":"קו אורך",
+  "longitude":"קו רוחב",
+  "nodes": "תחנות",
+  "nodesList": "טבלת אנטנות",
+  "addNode": "הוסף אנטנה",
+  "filterByStatus": "סינון לפי סטטוס",
+  "all": "הכל",
+  "regular": "רגיל",
+  "time": "זמן",
+  "title": "כותרת",
+  "nameAreas": "שם אזורים",
+  "areas": "אזורים",
+  "areasTable": "טבלת אזורים",
+  "addArea": "הוסף איזור",
+  "areaName": "שם איזור",
+  "status": "סטטוס",
+  "defaultAreaName": "אזור 3",
+  "defaultLocation": "(1.1, 2.2)",
+  "errorMessage": "אירעה שגיאה בטעינת הנתונים.",
+  "path": "נתיב",
+  "nodeTitle": "אנטנה {{index}}",
+  "droneTitle": "רחפן {{index}}",
+  "areaTitle": "אזור {{index}}",
+  "error-massage": {
+    "badRequest": "בקשה שגויה: השרת לא הצליח להבין את הבקשה.",
+    "unauthorized": "לא מורשה: יש צורך באימות.",
+    "forbidden": "אסור: אין לך הרשאה לגשת למשאב זה.",
+    "notFound": "לא נמצא: המשאב המבוקש לא נמצא.",
+    "internalServerError": "שגיאת שרת פנימית: משהו השתבש בשרת.",
+    "badGateway": "שער שגוי: השרת קיבל תגובה שגויה.",
+    "serviceUnavailable": "השירות אינו זמין כרגע.",
+    "unexpectedStatus": "סטטוס לא צפוי: {{status}}",
+    "noResponse": "אין תגובה מהשרת.",
+    "unknown": "שגיאה לא ידועה התרחשה.",
+    "validationError": "שגיאת וולידציה: {{issues}}"
+  },
+  "websocket": {
+    "connectedSuccessfully": "החיבור הצליח",
+    "invalidServerMessage": "הודעה שגויה מהשרת",
+    "connectionLostReconnecting": "החיבור אבד, מנסה להתחבר מחדש...",
+    "persistentConnectionError": "שגיאה בחיבור המתמיד"
+  },
+  "login-services": {
+    "success": "התחברת בהצלחה",
+    "invalidCredentials": "אימייל או סיסמה שגויים"
+  },
+  "logout-services": {
+    "success": "התנתקת בהצלחה"
+  },
+  "user-services": {
+    "unauthorized": "לא מורשה",
+    "created": "המשתמש נוצר בהצלחה",
+    "notFound": "משתמש לא נמצא",
+    "fetched": "קבלת המשתמשים הצליחה"
+  },
+  "role-services": {
+    "validationSuccess": "תפקיד אומת בהצלחה",
+    "validationFailed": "אימות התפקיד נכשל",
+    "validationError": "שגיאה באימות התפקיד"
+  },
+  "settings-services": {
+    "unauthorized": "לא מורשה",
+    "saved": "ההגדרות נשמרו בהצלחה",
+    "fetched": "ההגדרות נטענו בהצלחה",
+    "invalid": "הגדרות שגויות"
+  },
+  "node-services": {
+    "unauthorized": "לא מורשה",
+    "addedSuccessfully": "האנטנה נוספה בהצלחה",
+    "deletedSuccessfully": "האנטנה נמחקה בהצלחה",
+    "fetchedSuccessfully": "האנטנות נטענו בהצלחה",
+    "invalidData": "נתוני אנטנה שגויים"
+  },
+  "drones": {
+    "invalidChunk": {
+      "title": "גוש רחפנים לא תקין התקבל",
+      "message": "נתונים: {{data}}"
+    }
+  },
+  "alerts": {
+    "invalidChunk": {
+      "title": "גוש התראות לא תקין התקבל",
+      "message": "נתונים: {{data}}"
+    }
+  },
+  "area-services": {
+    "unauthorized": "לא מורשה",
+    "savedSuccessfully": "האזור נשמר בהצלחה",
+    "fetchedSuccessfully": "האזורים נטענו בהצלחה",
+    "invalidData": "נתוני האזור שגויים"
+  },
+  "validation": {
+    "mapURL":{
+      "description":"יש להזין כתובת URL תקינה"
+    },
+    "name": {
+      "max": "Name must not exceed 100 characters",
+      "description": "A general name field for entities like Target, Area, or Node"
+    },
+    "radius": {
+      "positive": "Radius must be a positive number",
+      "description": "Radius for circles or zones"
+    },
+    "frequency": {
+      "positive": "Frequency must be a positive number",
+      "description": "Operational frequency of devices"
+    },
+    "deviceType": {
+      "required": "Device type cannot be empty",
+      "description": "The type of the device (e.g., drone, node, etc.)"
+    },
+    "droneID": {
+      "required": "Drone ID cannot be empty",
+      "description": "Unique identifier for the drone"
+    },
+    "node": {
+      "idDescription": "Unique identifier for the node",
+      "statusDescription": "Node status: true if online",
+      "description": "Represents a node with location and operational status"
+    },
+    "flyZone": {
+      "description": "An array of points defining the fly zone"
+    },
+    "circle": {
+      "centerDescription": "The center point of the circle",
+      "description": "Represents a circle defined by a center point and radius"
+    },
+    "area": {
+      "boundaryDescription": "The boundary of the area (geometry data)",
+      "description": "Represents an area with a name and defined boundary"
+    },
+    "drone": {
+      "description": "Represents a drone with unique details"
+    },
+    "id": {
+      "description": "A unique identifier for a record or entity"
+    },
+    "userId": {
+      "description": "A unique identifier for a user"
+    },
+    "action": {
+      "max": "Action must not exceed 50 characters",
+      "description": "A description of the action performed (e.g., 'create', 'update')"
+    },
+    "tableName": {
+      "max": "Table name must not exceed 100 characters",
+      "description": "The name of the table affected by the action"
+    },
+    "recordId": {
+      "description": "The ID of the record in the affected table"
+    },
+    "details": {
+      "description": "A JSON object containing additional details about the action"
+    },
+    "timestamp": {
+      "description": "The timestamp when the action or event occurred"
+    },
+    "alertStatus": {
+      "description": "The status of the alert ('suc' = success, 'err' = error, 'reg' = regular)"
+    },
+    "isoDateString": {
+      "invalidFormat": "Invalid date-time format. Use ISO 8601 format.",
+      "description": "A valid ISO 8601 formatted date string"
+    },
+    "auditLog": {
+      "description": "Represents an audit log entry"
+    },
+    "alert": {
+      "description": "Represents an alert with time, title, and status",
+      "timeDescription": "The time the alert was created",
+      "titleRequired": "Title cannot be empty",
+      "titleDescription": "The title of the alert",
+      "messageRequired": "Message cannot be empty",
+      "messageDescription": "The message or description of the alert"
+    },
+    "token": {
+      "min": "האסימון חייב להיות לפחות 10 תווים",
+      "max": "האסימון לא יכול לחרוג מ-500 תווים",
+      "description": "אסימון הרשאה אופציונלי (לדוגמה, JWT)"
+    },
+    "statusCode": {
+      "min": "קוד הסטטוס חייב להיות לפחות 100 (קוד HTTP חוקי)",
+      "max": "קוד הסטטוס חייב להיות עד 599 (קוד HTTP חוקי)",
+      "description": "קוד סטטוס HTTP לדוגמה, 200 עבור הצלחה, 400 עבור שגיאת לקוח"
+    },
+    "message": {
+      "required": "ההודעה לא יכולה להיות ריקה",
+      "description": "תיאור קריא של הסטטוס של הבקשה או התגובה"
+    },
+    "data": {
+      "description": "מטען או נתונים שיכולים להיות כל סוג"
+    },
+    "areaName": {
+      "max": "שם האזור לא יכול לעלות על 50 תווים",
+      "description": "שם האזור אליו ההגדרה שייכת"
+    },
+    "ip": {
+      "regex": "פורמט כתובת IP אינו תקין",
+      "description": "כתובת IPv4 של המערכת"
+    },
+    "wifiPassword": {
+      "max": "סיסמת ה-WiFi לא יכולה לעלות על 255 תווים",
+      "description": "סיסמת רשת ה-WiFi של המערכת"
+    },
+    "signalStrength": {
+      "min": "עוצמת האות לא יכולה להיות פחות מ-0",
+      "max": "עוצמת האות לא יכולה להיות יותר מ-100",
+      "description": "עוצמת האות באחוזים (0-100)"
+    },
+    "username": {
+      "min": "שם המשתמש חייב להכיל לפחות 5 תווים",
+      "max": "שם המשתמש לא יכול לעלות על 20 תווים",
+      "regex": "שם המשתמש יכול להכיל רק אותיות, מספרים וקווים תחתונים",
+      "description": "שם המשתמש הייחודי של המשתמש"
+    },
+    "password": {
+      "min": "הסיסמה חייבת להכיל לפחות 8 תווים",
+      "regexUppercase": "הסיסמה חייבת לכלול לפחות אות אחת באנגלית גדולה",
+      "regexLowercase": "הסיסמה חייבת לכלול לפחות אות אחת באנגלית קטנה",
+      "regexNumber": "הסיסמה חייבת לכלול לפחות ספרה אחת",
+      "regexSpecial": "הסיסמה חייבת לכלול לפחות תו מיוחד אחד",
+      "description": "הסיסמה של המשתמש, בין 8 ל-18 תווים"
+    },
+    "role": {
+      "description": "תפקידי המשתמש במערכת"
+    },
+    "user": {
+      "description": "ייצוג משתמש עם שם משתמש, סיסמה, תפקיד ושם אזור"
+    },
+    "loginData": {
+      "description": "פרטי ההתחברות של המשתמש"
+    },
+    "roleValidateInput": {
+      "description": "קלט לבדיקה אם יש תפקיד מסוים"
+    },
+    "userData": {
+      "description": "נתוני משתמש מינימליים לצורך זיהוי"
+    }
+  }
+}

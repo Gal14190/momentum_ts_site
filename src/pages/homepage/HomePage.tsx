@@ -4,7 +4,9 @@ import classes from './homePage.module.css'
 function HomePage() {
   return (
     <div className={classes.container}>
-      <HomeImage/>
+      <div className={classes.container_item}>
+        <HomeImage />
+      </div>
     </div>
   );
 }

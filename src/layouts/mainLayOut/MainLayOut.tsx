@@ -1,8 +1,18 @@
 import React from "react";
 import classes from "./mainLayOut.module.css";
+import MainLayOutNavBar from "./mainLayOutNavBar/MainLayOutNavBar";
 
-const MainLayOut: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
-  return <div className={classes.mainContainer}>{children}</div>;
+type MainLayOutProps = {
+  children?: React.ReactNode;
+};
+
+const MainLayOut: React.FC<MainLayOutProps> = ({ children }) => {
+  return (
+    <>
+      <MainLayOutNavBar />
+      <div className={classes.mainContainer}>{children}</div>
+    </>
+  );
 };
 
 export default MainLayOut;

@@ -2,7 +2,31 @@ import Swal, { SweetAlertOptions } from "sweetalert2";
 import classes from "./alerts.module.css";
 import { renderToString } from "react-dom/server";
 import { ZodIssue } from "zod";
-import i18next from "i18next";
+
+const alertTexts = {
+  general: {
+    done: "Done",
+    cancel: "Cancel",
+    save: "Save",
+    continue: "Continue",
+    saved: "Saved!",
+    notSaved: "Not saved",
+    copy: "Copy",
+    copied: "Copied!",
+    passwordCopied: "Password has been copied to clipboard.",
+  },
+  input: {
+    enter: (item: string) => `Enter ${item}`,
+  },
+  error: {
+    invalidData: "Invalid Data",
+    requestFailed: "Request failed",
+  },
+  confirm: {
+    areYouSure: "Are you sure?",
+    changesWillNotBeSaved: "Your changes will not be saved.",
+  },
+};
 
 
 type ToastAlertLoc =
@@ -52,7 +76,7 @@ export function toastAlert(
  */
 export function alertInvalidData(alertBody: React.ReactNode, title?: string) {
   return Swal.fire({
-    title: title ? title : i18next.t("invalidData"),
+    title: title ? title : alertTexts.error.invalidData,
     customClass: {
       popup: classes.alert,
     },
@@ -68,14 +92,14 @@ export function alertInvalidData(alertBody: React.ReactNode, title?: string) {
  */
 export async function undoAlert() {
   const result = await Swal.fire({
-    title: i18next.t("areYouSure"),
+    title: alertTexts.confirm.areYouSure,
+    text: alertTexts.confirm.changesWillNotBeSaved,
+    confirmButtonText: alertTexts.general.save,
     customClass: {
       popup: classes.alert,
     },
-    text: i18next.t("changesWillNotBeSaved"),
     showDenyButton: true,
     showCancelButton: true,
-    confirmButtonText: i18next.t("save"),
     icon: "warning",
   });
 
@@ -84,7 +108,7 @@ export async function undoAlert() {
       customClass: {
         popup: classes.alert,
       },
-      title: i18next.t("saved"),
+      title: alertTexts.general.saved,
       text: "",
       icon: "success",
     });
@@ -93,7 +117,7 @@ export async function undoAlert() {
       customClass: {
         popup: classes.alert,
       },
-      title: i18next.t("notSaved"),
+      title: alertTexts.general.notSaved,
       text: "",
       icon: "info",
     });
@@ -191,7 +215,7 @@ export function ZodAlertList({ errorList }: { errorList: ZodIssue[] }) {
       {errorList.map((err, i) => (
         <li className={classes.error} key={i}>
           <span className={classes.errorPath}>
-            {err.path ? err.path.join(".") : i18next.t("unknown")}:
+            {err.path ? err.path.join(".") : "unknown"}:
           </span>
           <span className={classes.errorMessage}>{err.message}</span>
         </li>
@@ -212,15 +236,15 @@ export async function alertInput(
   miniTitle?: string
 ): Promise<string | boolean> {
   const result = await Swal.fire({
-    title: `${i18next.t("enter")} ${itemName}`,
-    text: miniTitle ? i18next.t(miniTitle) : "",
+    title: `${alertTexts.input.enter(itemName)}`,
+    text: miniTitle ? miniTitle : "",
     input: type,
     customClass: {
       popup: classes.alert,
     },
     showCancelButton: true,
-    confirmButtonText: i18next.t("done"),
-    cancelButtonText: i18next.t("cancel"),
+    confirmButtonText: alertTexts.general.done,
+    cancelButtonText: alertTexts.general.cancel,
     icon: "info",
   });
   return result.isConfirmed ? result.value : false;
@@ -234,7 +258,7 @@ export async function alertInput(
  */
 export async function alertSelect(title: string, options: string[]): Promise<string | boolean> {
   const result = await Swal.fire({
-    title: i18next.t(title),
+    title: title,
     input: "select",
     inputOptions: options.reduce((acc, option) => {
       acc[option] = option;
@@ -244,8 +268,8 @@ export async function alertSelect(title: string, options: string[]): Promise<str
       popup: classes.alert,
     },
     showCancelButton: true,
-    confirmButtonText: i18next.t("done"),
-    cancelButtonText: i18next.t("cancel"),
+    confirmButtonText: alertTexts.general.done,
+    cancelButtonText: alertTexts.general.cancel,
     icon: "info",
     didOpen: () => {
       document.querySelectorAll(".swal2-select option").forEach((el) => {
@@ -280,8 +304,8 @@ export async function alertPermission(
       popup: classes.alert,
     },
     showCancelButton: cancelText !== false,
-    confirmButtonText: permissionText ? permissionText : i18next.t("continue"),
-    cancelButtonText: cancelText ? cancelText : i18next.t("cancel"),
+    confirmButtonText: permissionText ? permissionText : alertTexts.general.continue,
+    cancelButtonText: cancelText ? cancelText : alertTexts.general.cancel,
   });
   return result.isConfirmed;
 }
@@ -321,7 +345,7 @@ export async function alertWithCopy(title: string, message: string) {
       border: 1px solid rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(5px);
      ">
-      ${i18next.t("user-services.copy")}
+     ${alertTexts.general.copy}
      </button>
     `,
     icon: "success",
@@ -336,8 +360,8 @@ export async function alertWithCopy(title: string, message: string) {
         copyBtn.addEventListener("click", async () => {
           navigator.clipboard.writeText(message);
           await Swal.fire({
-            title: i18next.t("user-services.copied"),
-            text: i18next.t("user-services.passwordCopied"),
+            title: alertTexts.general.copied,
+            text: alertTexts.general.passwordCopied,
             icon: "success",
             timer: 1500,
             showConfirmButton: false,

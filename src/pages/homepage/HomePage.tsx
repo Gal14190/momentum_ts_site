@@ -10,13 +10,6 @@ function HomePage() {
       <div className={classes.container_item}></div>
       <div className={classes.container_item}></div>
       <div className={classes.container_item}></div>
-      <div className={classes.container_item}></div>
-      <div className={classes.container_item}></div>
-      <div className={classes.container_item}></div>
-      <div className={classes.container_item}></div>
-      <div className={classes.container_item}></div>
-      <div className={classes.container_item}></div>
-      <div className={classes.container_item}></div>
       {/* <HomeImage/> */}
     </div>
   );

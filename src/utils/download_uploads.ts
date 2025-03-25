@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { alertFailedRequest, alertInput, alertSelect } from "./alerts/alerts";
 import { convertToCSV, getHeaders } from "./csv/handleCSV";
-import { t } from "i18next";
 
 export function downloadFile(data: any, fileType: "json" | "csv", fileName = "data") {
     let blob
@@ -80,7 +79,7 @@ export function parseCSV<T>(content: string, schema: z.ZodSchema<T>): T[] {
 }
 
 export const getFileType = async (): Promise<"csv" | "json" | undefined> => {
-    const typeOfFile = await alertSelect(t(`typeOfFile`),["json", "csv"]);
+    const typeOfFile = await alertSelect(`Type Of File`,["json", "csv"]);
     if (!typeOfFile || typeof typeOfFile !== "string") {
         return;
     }
@@ -92,7 +91,7 @@ export const getFileType = async (): Promise<"csv" | "json" | undefined> => {
 };
 
 export const getFileName = async (defaultName: string): Promise<string | false> => {
-    const fileName = await alertInput(t(`fileName`), "text");
+    const fileName = await alertInput(`File Name`, "text");
     if (!fileName || typeof fileName !== "string")
         return false;
     return fileName;

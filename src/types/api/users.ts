@@ -1,7 +1,5 @@
 import { z } from "zod";
-import { t } from "i18next";
 import { TokenSchema } from "./api";
-
 
 /* ------------------ 1. Individual Field Schemas ------------------ */
 
@@ -10,36 +8,35 @@ import { TokenSchema } from "./api";
  */
 export const UsernameSchema = z
     .string()
-    .min(3, { message: t("validation.username.min") })
-    .max(26, { message: t("validation.username.max") })
-    .regex(/^[a-zA-Z0-9_\s]*$/, { message: t("validation.username.regex") })
-    .describe(t("validation.username.description"));
+    .min(3, { message: "Username must be at least 3 characters long." })
+    .max(26, { message: "Username must be at most 26 characters long." })
+    .regex(/^[a-zA-Z0-9_\s]*$/, { message: "Username can only contain letters, numbers, spaces, and underscores." })
+    .describe("The unique identifier chosen by the user, used for login and display.");
 
 /**
  * Password Schema - Represents a user's password
  */
 export const PasswordSchema = z
     .string()
-    .min(8, { message: t("validation.password.min") })
-    .regex(/[A-Z]/, { message: t("validation.password.uppercase") })
-    .regex(/[a-z]/, { message: t("validation.password.lowercase") })
-    .regex(/[0-9]/, { message: t("validation.password.number") })
-    .regex(/[\W_]/, { message: t("validation.password.special") })
-    .describe(t("validation.password.description"));
-
+    .min(8, { message: "Password must be at least 8 characters long." })
+    .regex(/[A-Z]/, { message: "Password must contain at least one uppercase letter." })
+    .regex(/[a-z]/, { message: "Password must contain at least one lowercase letter." })
+    .regex(/[0-9]/, { message: "Password must contain at least one number." })
+    .regex(/[\W_]/, { message: "Password must contain at least one special character." })
+    .describe("A secure password containing uppercase, lowercase, numbers, and special characters.");
 
 /**
  * Email Schema - Represents a user's email address
  */
 export const EmailSchema = z
     .string()
-    .email({ message: t("validation.email.format") })
-    .max(254, { message: t("validation.email.maxLength") })
+    .email({ message: "Invalid email format." })
+    .max(254, { message: "Email must be less than 255 characters." })
     .regex(
         /^(?!.*\.\.)[A-Za-z0-9]+([._%+-]?[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,63}$/,
-        { message: t("validation.email.regex") }
+        { message: "Email contains invalid characters or format." }
     )
-    .describe(t("validation.email.description"));
+    .describe("A valid email address used for communication and login.");
 
 export type Email = z.infer<typeof EmailSchema>;
 
@@ -49,7 +46,7 @@ export type Email = z.infer<typeof EmailSchema>;
  * Role Schema - Represents the roles a user can have
  */
 export const RoleSchema = z.enum(["dev", "super-admin", "local-admin", "user"], {
-    description: t("validation.role.description"),
+    description: "Defines user privileges in the system.",
 });
 export type Role = z.infer<typeof RoleSchema>;
 
@@ -77,8 +74,6 @@ export const LoginDataSchema = z.object({
 });
 export type LoginData = z.infer<typeof LoginDataSchema>;
 
-
-
 export const UserSignUpSchema = z.object({
     email: EmailSchema,
     name: UsernameSchema,
@@ -98,7 +93,7 @@ export type UserSignUpResponse = z.infer<typeof UserSignUpResponseSchema>;
  */
 export const RoleValidateInputSchema = z.object({
     role: RoleSchema,
-    token: TokenSchema.describe(t("validation.roleValidateInput.token")),
+    token: TokenSchema.describe("A valid token for authentication when validating role."),
 });
 export type RoleValidateInput = z.infer<typeof RoleValidateInputSchema>;
 
@@ -109,7 +104,7 @@ export type RoleValidateInput = z.infer<typeof RoleValidateInputSchema>;
  */
 export const UserDataSchema = z.object({
     username: UsernameSchema,
-    role: RoleSchema.describe(t("validation.userData.role")),
-    password: z.string().optional()
+    role: RoleSchema.describe("The assigned role determining user permissions."),
+    password: z.string().optional(),
 });
 export type UserData = z.infer<typeof UserDataSchema>;

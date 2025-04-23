@@ -15,7 +15,7 @@ html, body, #root{
 html {
   scroll-behavior: smooth;
   scrollbar-width: none;
-  background: radial-gradient(ellipse at bottom, #394d64 0%, #131520 100%);
+  background: radial-gradient(ellipse at bottom, #2f4053 0%, #000000 100%);
 }
 
 *::-webkit-scrollbar {

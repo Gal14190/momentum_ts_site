@@ -1,5 +1,5 @@
 // import ContactUs from '../../components/home/contact/ContactUs';
-import Footer from '../../components/home/footer/Footer';
+// import Footer from '../../components/home/footer/Footer';
 import HomeInfo from '../../components/home/homeInfo/HomeInfo';
 import HomeInfo2 from '../../components/home/homeInfo2/HomeInfo2';
 import WhyMomentum from '../../components/home/whyMomentum/WhyMomentum';

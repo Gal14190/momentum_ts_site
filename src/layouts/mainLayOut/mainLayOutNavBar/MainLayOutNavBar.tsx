@@ -2,13 +2,13 @@ import { useLocation } from "react-router-dom";
 import classes from "./mainLayOutNavBar.module.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getTokenData } from "../../../store/storeUtils";
-import { UserData } from "../../../types/api/users";
+// import { getTokenData } from "../../../store/storeUtils";
+// import { UserData } from "../../../types/api/users";
 
 const MainLayOutNavBar = () => {
      const location = useLocation();
-     const defaultUser: UserData = { username: "Guest", role: "user" };
-     const userData: UserData = getTokenData<UserData>("user") ?? defaultUser
+     // const defaultUser: UserData = { username: "Guest", role: "user" };
+     // const userData: UserData = getTokenData<UserData>("user") ?? defaultUser
      const [isOpen, setIsOpen] = useState(false);
 
      useEffect(() => {

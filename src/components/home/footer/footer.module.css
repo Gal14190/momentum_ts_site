@@ -1,0 +1,91 @@
+.footer {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(132, 132, 132, 0.3);
+  backdrop-filter: blur(2px);
+  color: #f8fafc;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: bottom 0.5s ease;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.open {
+  bottom: 0;
+}
+
+.toggleButton {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.75rem 0.75rem 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: rgba(200, 200, 200, 0.2);
+  backdrop-filter: blur(2px);
+  color: #f8fafc;
+  border: none;
+  border-radius: 1rem 1rem 0 0;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.buttonClose {
+  background: none;
+  backdrop-filter: none;
+  color: #f8fafc;
+  border: none;
+}
+
+.sitemap {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #f1f5f9;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.socials {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+.icon img:hover {
+  transform: scale(1.1);
+}
+
+.copy {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}

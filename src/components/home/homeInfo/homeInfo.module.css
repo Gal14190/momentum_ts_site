@@ -5,6 +5,7 @@
      align-items: center;
      height: 100%;
      width: 100%;
+     overflow: hidden;
 }
 
 .about {
@@ -13,6 +14,7 @@
      height: 50%;
      align-items: start;
      justify-content: space-between;
+     padding: 1rem;
 }
 
 .icon {
@@ -28,31 +30,38 @@
      flex-direction: column;
      justify-content: space-between;
      text-align: left;
-     width: 58%;
-     height: 90%;
+     width: 60%;
+     height: 100%;
+     padding: 0.5rem;
 }
 
 .picture {
      width: 100%;
      height: 50%;
+     min-height: 200px;
      background-size: cover;
      background-position: center;
+     background-repeat: no-repeat;
      background-image: url('../../../assets/images/space/space_background.jpg');
 }
 
 .title {
-     font-size: 52px;
+     font-size: 48px;
      font-weight: bold;
-     text-shadow: 0 0 10px 15px rgb(0, 0, 0);
+     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+     margin: 0.5rem 0;
+     line-height: 1.2;
 }
 
 .subtitle {
-     font-size: 36px;
+     font-size: 32px;
      font-weight: 500;
-     text-shadow: 0 0 10px 15px rgb(0, 0, 0);
+     text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+     margin: 0.2rem 0;
+     line-height: 1.2;
 }
 
-/* Responsive */
+/* 4K Screens */
 @media (min-width: 1880px) {
      .title {
           font-size: 68px;
@@ -63,6 +72,7 @@
      }
 }
 
+/* Desktop */
 @media (min-width: 1440px) {
      .container {
           flex-direction: row;
@@ -71,26 +81,21 @@
      .about {
           width: 46%;
           height: 80%;
-          display: flex;
           flex-direction: column;
           justify-content: center;
+          align-items: flex-start;
      }
 
      .icon {
-          display: flex;
-          justify-content: end;
-          align-items: start;
           width: 60%;
           height: 40%;
      }
 
      .text {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          text-align: left;
           width: 100%;
           height: 60%;
+          text-align: left;
+          justify-content: space-evenly;
      }
 
      .picture {
@@ -100,32 +105,26 @@
 
      .title {
           font-size: 52px;
-          margin: 0;
      }
 
      .subtitle {
           font-size: 36px;
-          margin: 0;
      }
 }
 
+/* Tablet */
 @media (max-width: 1024px) {
      .about {
           flex-direction: row-reverse;
           height: 50%;
-          align-items: start;
      }
 
      .icon {
-          display: flex;
-          justify-content: end;
-          align-items: start;
           width: 40%;
           height: 60%;
      }
 
      .text {
-          text-align: left;
           width: 60%;
           height: 100%;
      }
@@ -144,10 +143,11 @@
      }
 }
 
+/* Narrow tablets & wide phones */
 @media (max-width: 800px) and (max-height: 1000px) {
      .about {
-          justify-content: center;
           width: 96%;
+          justify-content: center;
      }
 
      .title {
@@ -159,7 +159,8 @@
      }
 }
 
-@media (max-width: 650px), (max-height: 820px) {
+/* Mobile */
+@media (max-width: 650px) and (max-height: 820px) {
      .about {
           flex-direction: column;
           align-items: center;
@@ -169,21 +170,19 @@
      }
 
      .icon {
-          display: flex;
           justify-content: center;
           width: 230px;
           height: 145px;
      }
 
      .text {
+          text-align: center;
           width: 100%;
           height: auto;
-          text-align: center;
      }
 
      .title {
           font-size: 36px;
-          margin: 0;
      }
 
      .subtitle {
@@ -191,8 +190,8 @@
      }
 }
 
+/* Small phones */
 @media (max-width: 500px) {
-
      .icon {
           width: 200px;
           height: 135px;

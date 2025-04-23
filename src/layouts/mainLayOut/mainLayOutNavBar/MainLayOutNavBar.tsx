@@ -49,11 +49,11 @@ const MainLayOutNavBar = () => {
                               </Link>
                          ))}
                     </div>
-                    {(userData.role !== "user" || isOpen) &&
+                    {/* {(userData.role !== "user" || isOpen) &&
                          <div className={classes.userInfo}>
                               {userData.username} - {userData.role}
                          </div>
-                    }
+                    } */}
                </div>
           </>
      );

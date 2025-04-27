@@ -58,7 +58,7 @@ const WhyMomentum = () => {
   return (
     <div className={classes.container} ref={sectionRef}>
       <h2 className={classes.mainTitle}>Why Momentum?</h2>
-      <p className={classes.subtitle}>Momentum - Tailored Solution Ltd.</p>
+      <p className={classes.subtitle}>Momentum Tailored Solution Ltd.</p>
       <h3 className={classes.sectionTitle}>Areas of Expertise</h3>
 
       <div className={classes.grid}>

@@ -3,7 +3,7 @@
 .container {
      display: flex;
      flex-direction: column;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
      min-height: 100%;
      width: 100%;
@@ -53,6 +53,7 @@
      background-repeat: no-repeat;
      margin-top: clamp(1rem, 4vh, 2rem);
      border-radius: 3rem;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .title {

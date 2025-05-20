@@ -7,13 +7,14 @@
 }
 
 .picture {
-  width: 100%;
+  width: 95%;
   height: 50%;
   background-image: url('../../../assets/images/space/space_background4-min.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
+  border-radius: 3rem;
   transform: translateY(40px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }

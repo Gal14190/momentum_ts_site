@@ -8,5 +8,6 @@
 
 .container_item {
   /* scroll-snap-align: start; */
+  min-height: 600px;
   height: 90dvh;
 }

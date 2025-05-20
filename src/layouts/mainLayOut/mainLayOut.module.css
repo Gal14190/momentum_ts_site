@@ -1,23 +1,13 @@
 .mainContainer {
   width: 80%;
   height: 90dvh;
-  overflow-y: auto;
   overflow-x: hidden;
   margin: auto;
   margin-top: 10vh;
-
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* backdrop-filter: blur(4px);
-  background: rgba(200, 200, 200, 0.2);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
-
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
@@ -26,42 +16,36 @@
   .mainContainer {
     width: 70%;
     height: 90vh;
-    font-size: 2rem;
   }
 }
 
 @media (max-width: 1440px) {
   .mainContainer {
     width: 75%;
-    font-size: 1.4rem;
   }
 }
 
 @media (max-width: 1024px) {
   .mainContainer {
     width: 85%;
-    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 900px) {
   .mainContainer {
     width: 90%;
-    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 768px) {
   .mainContainer {
     width: 95%;
-    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 600px) {
   .mainContainer {
     width: 96%;
-    font-size: 1rem;
     border-radius: 10px;
   }
 }
@@ -69,7 +53,6 @@
 @media (max-width: 480px) {
   .mainContainer {
     width: 98%;
-    font-size: 0.9rem;
     border-radius: 8px;
   }
 }
@@ -77,7 +60,6 @@
 @media (max-width: 360px) {
   .mainContainer {
     width: 98%;
-    font-size: 0.8rem;
     border-radius: 6px;
   }
 }

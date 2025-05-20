@@ -1,0 +1,150 @@
+[debug] [2025-05-20T08:26:23.651Z] ----------------------------------------------------------------------
+[debug] [2025-05-20T08:26:23.655Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js hosting:channel:deploy 2 --debug
+[debug] [2025-05-20T08:26:23.656Z] CLI Version:   13.32.0
+[debug] [2025-05-20T08:26:23.656Z] Platform:      win32
+[debug] [2025-05-20T08:26:23.656Z] Node Version:  v22.11.0
+[debug] [2025-05-20T08:26:23.656Z] Time:          Tue May 20 2025 11:26:23 GMT+0300 (שעון ישראל (קיץ))
+[debug] [2025-05-20T08:26:23.656Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-20T08:26:23.830Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-20T08:26:23.831Z] > authorizing via signed-in user (website@momentumtailoredsolutions.com)
+[debug] [2025-05-20T08:26:23.832Z] [iam] checking project fir-cdccc for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-20T08:26:23.833Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:23.833Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:23.834Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-cdccc:testIamPermissions [none]
+[debug] [2025-05-20T08:26:23.834Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-cdccc:testIamPermissions x-goog-quota-user=projects/fir-cdccc
+[debug] [2025-05-20T08:26:23.834Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-cdccc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-20T08:26:25.198Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-cdccc:testIamPermissions 200
+[debug] [2025-05-20T08:26:25.198Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-cdccc:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-20T08:26:25.199Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:25.200Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:25.200Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-cdccc [none]
+[debug] [2025-05-20T08:26:25.715Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-cdccc 200
+[debug] [2025-05-20T08:26:25.715Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-cdccc {"projectId":"fir-cdccc","projectNumber":"619224528122","displayName":"MomentumTailoredSolutions Site","name":"projects/fir-cdccc","resources":{"hostingSite":"fir-cdccc"},"state":"ACTIVE","etag":"1_c2694584-a715-49d7-9041-7b581e1c6880"}
+[debug] [2025-05-20T08:26:25.718Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:25.718Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:25.718Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels/2 [none]
+[debug] [2025-05-20T08:26:27.321Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels/2 200
+[debug] [2025-05-20T08:26:27.321Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels/2 {"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2","url":"https://fir-cdccc--2-qed5uwl2.web.app","release":{"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2/releases/1747728752173000","version":{"name":"projects/fir-cdccc/sites/fir-cdccc/versions/a185b87061faba11","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-05-20T08:11:53.973601Z","createUser":{"email":"website@momentumtailoredsolutions.com"},"finalizeTime":"2025-05-20T08:12:31.594498Z","finalizeUser":{"email":"website@momentumtailoredsolutions.com"},"fileCount":"23","versionBytes":"3464155"},"type":"DEPLOY","releaseTime":"2025-05-20T08:12:32.173Z","releaseUser":{"email":"website@momentumtailoredsolutions.com"}},"createTime":"2025-05-20T08:11:53.251447372Z","updateTime":"2025-05-20T08:12:32.173Z","retainedReleaseCount":10,"expireTime":"2025-05-27T08:11:53.251447372Z"}
+[debug] [2025-05-20T08:26:27.322Z] [hosting] found existing channel for site fir-cdccc {"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2","url":"https://fir-cdccc--2-qed5uwl2.web.app","release":{"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2/releases/1747728752173000","version":{"name":"projects/fir-cdccc/sites/fir-cdccc/versions/a185b87061faba11","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-05-20T08:11:53.973601Z","createUser":{"email":"website@momentumtailoredsolutions.com"},"finalizeTime":"2025-05-20T08:12:31.594498Z","finalizeUser":{"email":"website@momentumtailoredsolutions.com"},"fileCount":"23","versionBytes":"3464155"},"type":"DEPLOY","releaseTime":"2025-05-20T08:12:32.173Z","releaseUser":{"email":"website@momentumtailoredsolutions.com"}},"createTime":"2025-05-20T08:11:53.251447372Z","updateTime":"2025-05-20T08:12:32.173Z","retainedReleaseCount":10,"expireTime":"2025-05-27T08:11:53.251447372Z"}
+[debug] [2025-05-20T08:26:27.324Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:27.325Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:27.326Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels/2 updateMask=ttl
+[debug] [2025-05-20T08:26:27.326Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels/2 {"ttl":"604800s"}
+[debug] [2025-05-20T08:26:27.960Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels/2 200
+[debug] [2025-05-20T08:26:27.961Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels/2 {"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2","url":"https://fir-cdccc--2-qed5uwl2.web.app","release":{"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2/releases/1747728752173000","version":{"name":"projects/fir-cdccc/sites/fir-cdccc/versions/a185b87061faba11","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-05-20T08:11:53.973601Z","createUser":{"email":"website@momentumtailoredsolutions.com"},"finalizeTime":"2025-05-20T08:12:31.594498Z","finalizeUser":{"email":"website@momentumtailoredsolutions.com"},"fileCount":"23","versionBytes":"3464155"},"type":"DEPLOY","releaseTime":"2025-05-20T08:12:32.173Z","releaseUser":{"email":"website@momentumtailoredsolutions.com"}},"createTime":"2025-05-20T08:11:53.251447372Z","updateTime":"2025-05-20T08:26:21.357965300Z","retainedReleaseCount":10,"expireTime":"2025-05-27T08:26:21.357965300Z"}
+[debug] [2025-05-20T08:26:27.961Z] [hosting] updated TTL for existing channel for site fir-cdccc {"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2","url":"https://fir-cdccc--2-qed5uwl2.web.app","release":{"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2/releases/1747728752173000","version":{"name":"projects/fir-cdccc/sites/fir-cdccc/versions/a185b87061faba11","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-05-20T08:11:53.973601Z","createUser":{"email":"website@momentumtailoredsolutions.com"},"finalizeTime":"2025-05-20T08:12:31.594498Z","finalizeUser":{"email":"website@momentumtailoredsolutions.com"},"fileCount":"23","versionBytes":"3464155"},"type":"DEPLOY","releaseTime":"2025-05-20T08:12:32.173Z","releaseUser":{"email":"website@momentumtailoredsolutions.com"}},"createTime":"2025-05-20T08:11:53.251447372Z","updateTime":"2025-05-20T08:26:21.357965300Z","retainedReleaseCount":10,"expireTime":"2025-05-27T08:26:21.357965300Z"}
+[info] 
+[info] === Deploying to 'fir-cdccc'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-05-20T08:26:27.967Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:27.967Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:27.968Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/versions [none]
+[debug] [2025-05-20T08:26:27.968Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-05-20T08:26:29.058Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/versions 200
+[debug] [2025-05-20T08:26:29.059Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/versions {"name":"projects/619224528122/sites/fir-cdccc/versions/83a6bbbc7484d69b","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[fir-cdccc]: beginning deploy... 
+[info] i  hosting[fir-cdccc]: found 21 files in build 
+[debug] [2025-05-20T08:26:29.079Z] [hosting] uploading with 200 concurrency
+[debug] [2025-05-20T08:26:29.309Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.310Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.311Z] [hosting] hash cache [YnVpbGQ] stored for 21 files
+[debug] [2025-05-20T08:26:29.311Z] [hosting][hash queue][FINAL] {"max":226,"min":11,"avg":25.666666666666668,"active":0,"complete":21,"success":21,"errored":0,"retried":0,"total":21,"elapsed":231}
+[debug] [2025-05-20T08:26:29.312Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/619224528122/sites/fir-cdccc/versions/83a6bbbc7484d69b:populateFiles [none]
+[debug] [2025-05-20T08:26:29.312Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/619224528122/sites/fir-cdccc/versions/83a6bbbc7484d69b:populateFiles {"files":{"/robots.txt":"28daf6ab5ca8ea6bc74fd2e9740e7f267c33549367e30e15f9594e6a2e82eff2","/sitemap.xml":"127c4648d5b40fac03fc9d61cd0ce4eb1fe2ef39cf3784fee70add5875ce8f74","/manifest.json":"4368aeaf848ae2e048765562c289452f33ad2a175c4b1951ea8bdf2ada0d5b10","/index.html":"bfb439efb1c747c2e12127bee6d2591b93300a293f867582a374e9667de8bc25","/asset-manifest.json":"42c0c9125e13ba0a94f9afa542da2d7570d3b6079c6d73ed377338c6d71f93f2","/static/media/V_pagaz.577cdaa91070113f899b.svg":"6f63906b28beba43b36c125afad3ca081fefd6888bb00ff384f95be9a429333e","/static/js/main.f4886eb7.js.LICENSE.txt":"5aa90e08e4eb444dd3d3abf41ec0a5e44d51aa73ebfd8e238f6db4c33243f7a2","/static/js/453.e511d1b5.chunk.js.map":"04ffc621ac09c4fa13d0e21c370349ba83931f4978044e1d7441479daa281075","/static/js/453.e511d1b5.chunk.js":"ae330f7f7c52fde5ae552f873354101d6c2e88ad188816b7dd0d76560aa0ade1","/icons/wa.svg":"4b5082b18b56b4535db6e4e86c0d4e5b095dad7877f0705270d94638c0b67190","/icons/in.svg":"e4178d911eb6629e8e2c113866f8e2af5e075f011170307c23351d0969011c4f","/icons/ig.svg":"7191642618424428b4ebc4f226beffb18a2cabdd3c787814dc038aea167f475d","/icons/em.svg":"4d77ee82e7ff547fb9bbe860f9e129ae0528ea28b196987298e340e6026e2c82","/static/css/main.bd7964eb.css":"40a630902bb011a56f970da5489586858b725418a1e0d428a176519193de1011","/static/media/space_background4-min.029711a46fe52cbb4a49.png":"023d948524f03d48a33808864f218dc16f93f73d791d5026ed10d6b1056e17d4","/static/css/main.bd7964eb.css.map":"45be0dbfb554bd4efae4094dde81893055e9a53a1e5cbe990cf53fad5d05d883","/static/media/space_background3-min.4365c13fb63eefcb08b2.png":"47254d5b40ec50efdb6ab9a8f00c8ba19f18c2c7e0bc1740531efa3d8e41a30c","/logo1.svg":"d15a52b864e85bc28ddd52917c05a1579d15f4df9266d99c334b95bcd8f0d36a","/static/js/main.f4886eb7.js":"bcaba7889081dc341810657b5f37a3f20a42a682510bde773303e06d679e0982","/static/media/momentum_logo_white.55c60fe49061b3c0d10d024ea4cd176f.svg":"37f22cb719b6c207d303f831da738c9dd86d51e11dca471ac2fb1c8b939af1ad","/static/js/main.f4886eb7.js.map":"16ac6dfc5afe4a4f2f23694708e06422ddae9ee9d0a3d6e407b39d66ea940ef7"}}
+[debug] [2025-05-20T08:26:29.903Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/619224528122/sites/fir-cdccc/versions/83a6bbbc7484d69b:populateFiles 200
+[debug] [2025-05-20T08:26:29.904Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/619224528122/sites/fir-cdccc/versions/83a6bbbc7484d69b:populateFiles {"uploadRequiredHashes":["40a630902bb011a56f970da5489586858b725418a1e0d428a176519193de1011","42c0c9125e13ba0a94f9afa542da2d7570d3b6079c6d73ed377338c6d71f93f2","bfb439efb1c747c2e12127bee6d2591b93300a293f867582a374e9667de8bc25","45be0dbfb554bd4efae4094dde81893055e9a53a1e5cbe990cf53fad5d05d883"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files"}
+[debug] [2025-05-20T08:26:29.905Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.905Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.906Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.906Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.907Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.908Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.909Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.909Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:29.910Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/40a630902bb011a56f970da5489586858b725418a1e0d428a176519193de1011 [none]
+[debug] [2025-05-20T08:26:29.910Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/40a630902bb011a56f970da5489586858b725418a1e0d428a176519193de1011 [stream]
+[debug] [2025-05-20T08:26:29.912Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/42c0c9125e13ba0a94f9afa542da2d7570d3b6079c6d73ed377338c6d71f93f2 [none]
+[debug] [2025-05-20T08:26:29.912Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/42c0c9125e13ba0a94f9afa542da2d7570d3b6079c6d73ed377338c6d71f93f2 [stream]
+[debug] [2025-05-20T08:26:29.914Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/bfb439efb1c747c2e12127bee6d2591b93300a293f867582a374e9667de8bc25 [none]
+[debug] [2025-05-20T08:26:29.915Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/bfb439efb1c747c2e12127bee6d2591b93300a293f867582a374e9667de8bc25 [stream]
+[debug] [2025-05-20T08:26:29.917Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/45be0dbfb554bd4efae4094dde81893055e9a53a1e5cbe990cf53fad5d05d883 [none]
+[debug] [2025-05-20T08:26:29.917Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/45be0dbfb554bd4efae4094dde81893055e9a53a1e5cbe990cf53fad5d05d883 [stream]
+[debug] [2025-05-20T08:26:29.918Z] [hosting][populate queue][FINAL] {"max":601,"min":601,"avg":601,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":610}
+[debug] [2025-05-20T08:26:29.919Z] [hosting] uploads queued: 4
+[info] i  hosting: uploading new files [0/4] (0%) 
+[debug] [2025-05-20T08:26:33.051Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/40a630902bb011a56f970da5489586858b725418a1e0d428a176519193de1011 200
+[debug] [2025-05-20T08:26:33.052Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/40a630902bb011a56f970da5489586858b725418a1e0d428a176519193de1011 [stream]
+[info] i  hosting: uploading new files [1/4] (25%) 
+[debug] [2025-05-20T08:26:33.583Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/bfb439efb1c747c2e12127bee6d2591b93300a293f867582a374e9667de8bc25 200
+[debug] [2025-05-20T08:26:33.584Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/bfb439efb1c747c2e12127bee6d2591b93300a293f867582a374e9667de8bc25 [stream]
+[debug] [2025-05-20T08:26:33.585Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/42c0c9125e13ba0a94f9afa542da2d7570d3b6079c6d73ed377338c6d71f93f2 200
+[debug] [2025-05-20T08:26:33.586Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/42c0c9125e13ba0a94f9afa542da2d7570d3b6079c6d73ed377338c6d71f93f2 [stream]
+[debug] [2025-05-20T08:26:33.587Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/45be0dbfb554bd4efae4094dde81893055e9a53a1e5cbe990cf53fad5d05d883 200
+[debug] [2025-05-20T08:26:33.587Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/fir-cdccc/versions/83a6bbbc7484d69b/files/45be0dbfb554bd4efae4094dde81893055e9a53a1e5cbe990cf53fad5d05d883 [stream]
+[debug] [2025-05-20T08:26:33.588Z] [hosting][upload queue][FINAL] {"max":3680,"min":3148,"avg":3546,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":3683}
+[info] i  hosting: upload complete 
+[info] +  hosting[fir-cdccc]: file upload complete 
+[debug] [2025-05-20T08:26:33.589Z] [hosting] deploy completed after 4525ms
+[debug] [2025-05-20T08:26:33.589Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "fir-cdccc"
+    },
+    "version": "projects/619224528122/sites/fir-cdccc/versions/83a6bbbc7484d69b"
+  }
+]
+[info] i  hosting[fir-cdccc]: finalizing version... 
+[debug] [2025-05-20T08:26:33.591Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:33.591Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:33.591Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/versions/83a6bbbc7484d69b updateMask=status%2Cconfig
+[debug] [2025-05-20T08:26:33.592Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/versions/83a6bbbc7484d69b {"status":"FINALIZED","config":{}}
+[debug] [2025-05-20T08:26:34.385Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/versions/83a6bbbc7484d69b 200
+[debug] [2025-05-20T08:26:34.385Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/versions/83a6bbbc7484d69b {"name":"projects/619224528122/sites/fir-cdccc/versions/83a6bbbc7484d69b","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-05-20T08:26:22.009434Z","createUser":{"email":"website@momentumtailoredsolutions.com"},"finalizeTime":"2025-05-20T08:26:27.950509Z","finalizeUser":{"email":"website@momentumtailoredsolutions.com"}}
+[debug] [2025-05-20T08:26:34.385Z] [hosting] finalized version for fir-cdccc:[object Object]
+[info] +  hosting[fir-cdccc]: version finalized 
+[info] i  hosting[fir-cdccc]: releasing new version... 
+[debug] [2025-05-20T08:26:34.386Z] [hosting] releasing to channel: 2
+[debug] [2025-05-20T08:26:34.387Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:34.387Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:34.388Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/channels/2/releases versionName=projects%2F619224528122%2Fsites%2Ffir-cdccc%2Fversions%2F83a6bbbc7484d69b
+[debug] [2025-05-20T08:26:34.388Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/channels/2/releases {}
+[debug] [2025-05-20T08:26:35.342Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/channels/2/releases 200
+[debug] [2025-05-20T08:26:35.343Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fir-cdccc/channels/2/releases {"name":"projects/619224528122/sites/fir-cdccc/channels/2/releases/1747729588227000","version":{"name":"projects/619224528122/sites/fir-cdccc/versions/83a6bbbc7484d69b","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-05-20T08:26:22.009434Z","createUser":{"email":"website@momentumtailoredsolutions.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKxL2dtMhGe9-bzV0KChv-35P_tuV0iTVv5Mm2S3attslVVwg=mo"},"finalizeTime":"2025-05-20T08:26:27.950509Z","finalizeUser":{"email":"website@momentumtailoredsolutions.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKxL2dtMhGe9-bzV0KChv-35P_tuV0iTVv5Mm2S3attslVVwg=mo"}},"type":"DEPLOY","releaseTime":"2025-05-20T08:26:28.227Z","releaseUser":{"email":"website@momentumtailoredsolutions.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKxL2dtMhGe9-bzV0KChv-35P_tuV0iTVv5Mm2S3attslVVwg=mo"}}
+[debug] [2025-05-20T08:26:35.343Z] [hosting] release: {"name":"projects/619224528122/sites/fir-cdccc/channels/2/releases/1747729588227000","version":{"name":"projects/619224528122/sites/fir-cdccc/versions/83a6bbbc7484d69b","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-05-20T08:26:22.009434Z","createUser":{"email":"website@momentumtailoredsolutions.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKxL2dtMhGe9-bzV0KChv-35P_tuV0iTVv5Mm2S3attslVVwg=mo"},"finalizeTime":"2025-05-20T08:26:27.950509Z","finalizeUser":{"email":"website@momentumtailoredsolutions.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKxL2dtMhGe9-bzV0KChv-35P_tuV0iTVv5Mm2S3attslVVwg=mo"}},"type":"DEPLOY","releaseTime":"2025-05-20T08:26:28.227Z","releaseUser":{"email":"website@momentumtailoredsolutions.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocKxL2dtMhGe9-bzV0KChv-35P_tuV0iTVv5Mm2S3attslVVwg=mo"}}
+[info] +  hosting[fir-cdccc]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/fir-cdccc/overview
+[info] Hosting URL: https://fir-cdccc.web.app
+[debug] [2025-05-20T08:26:35.704Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:35.704Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:35.704Z] >>> [apiv2][query] GET https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config [none]
+[debug] [2025-05-20T08:26:36.234Z] <<< [apiv2][status] GET https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config 404
+[debug] [2025-05-20T08:26:36.235Z] <<< [apiv2][body] GET https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config {"error":{"code":404,"message":"CONFIGURATION_NOT_FOUND","status":"NOT_FOUND"}}
+[warn] !  hosting:channel: Unable to add channel domain to Firebase Auth. Visit the Firebase Console at https://console.firebase.google.com/project/fir-cdccc/authentication/providers
+
+ 
+[debug] [2025-05-20T08:26:36.249Z] [hosting] unable to add auth domain Request to https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config had HTTP Error: 404, CONFIGURATION_NOT_FOUND {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"CONFIGURATION_NOT_FOUND","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config had HTTP Error: 404, CONFIGURATION_NOT_FOUND","status":404}
+[debug] [2025-05-20T08:26:36.250Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:36.251Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:36.251Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels pageToken=&pageSize=10
+[debug] [2025-05-20T08:26:36.829Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels 200
+[debug] [2025-05-20T08:26:36.829Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-cdccc/sites/fir-cdccc/channels {"channels":[{"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2","url":"https://fir-cdccc--2-qed5uwl2.web.app","release":{"name":"projects/fir-cdccc/sites/fir-cdccc/channels/2/releases/1747729588227000","version":{"name":"projects/fir-cdccc/sites/fir-cdccc/versions/83a6bbbc7484d69b","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-05-20T08:26:22.009434Z","createUser":{"email":"website@momentumtailoredsolutions.com"},"finalizeTime":"2025-05-20T08:26:27.950509Z","finalizeUser":{"email":"website@momentumtailoredsolutions.com"}},"type":"DEPLOY","releaseTime":"2025-05-20T08:26:28.227Z","releaseUser":{"email":"website@momentumtailoredsolutions.com"}},"createTime":"2025-05-20T08:11:53.251447372Z","updateTime":"2025-05-20T08:26:28.227Z","retainedReleaseCount":10,"expireTime":"2025-05-27T08:26:21.357965300Z"},{"name":"projects/fir-cdccc/sites/fir-cdccc/channels/live","url":"https://fir-cdccc.web.app","release":{"name":"projects/fir-cdccc/sites/fir-cdccc/channels/live/releases/1741504986527000","version":{"name":"projects/fir-cdccc/sites/fir-cdccc/versions/c7d1c79e508304e1","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-03-09T07:23:03.938313Z","createUser":{"email":"website@momentumtailoredsolutions.com"},"finalizeTime":"2025-03-09T07:23:06.677394Z","finalizeUser":{"email":"website@momentumtailoredsolutions.com"},"fileCount":"17","versionBytes":"1275449"},"type":"DEPLOY","releaseTime":"2025-03-09T07:23:06.527Z","releaseUser":{"email":"website@momentumtailoredsolutions.com"}},"createTime":"2025-02-05T20:49:15.143145147Z","updateTime":"2025-03-09T07:23:06.527Z","retainedReleaseCount":2147483647}]}
+[debug] [2025-05-20T08:26:36.831Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:36.831Z] Checked if tokens are valid: true, expires at: 1747732276363
+[debug] [2025-05-20T08:26:36.831Z] >>> [apiv2][query] GET https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config [none]
+[debug] [2025-05-20T08:26:37.143Z] <<< [apiv2][status] GET https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config 404
+[debug] [2025-05-20T08:26:37.143Z] <<< [apiv2][body] GET https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config {"error":{"code":404,"message":"CONFIGURATION_NOT_FOUND","status":"NOT_FOUND"}}
+[warn] !  hosting:channel: Unable to sync Firebase Auth state. 
+[debug] [2025-05-20T08:26:37.145Z] [hosting] unable to sync auth domain Request to https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config had HTTP Error: 404, CONFIGURATION_NOT_FOUND {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"CONFIGURATION_NOT_FOUND","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://identitytoolkit.googleapis.com/admin/v2/projects/fir-cdccc/config had HTTP Error: 404, CONFIGURATION_NOT_FOUND","status":404}
+[info] 
+[info] +  hosting:channel: Channel URL (fir-cdccc): https://fir-cdccc--2-qed5uwl2.web.app [expires 2025-05-27 11:26:21] 

@@ -27,8 +27,8 @@
 
 .icon {
      display: flex;
-     justify-content: flex-end;
-     align-items: flex-start;
+     justify-content: center;
+     align-items: center;
      width: clamp(25%, 35%, 40%);
      height: auto;
      margin-bottom: clamp(1rem, 3vw, 2rem);
@@ -76,7 +76,7 @@
 }
 
 /* Tablet: stack icon + text vertically */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
      .about {
           /* flex-direction: column-reverse; */
           align-items: center;
@@ -112,7 +112,7 @@
      }
 }
 
-@media (max-width:1200px ) and (min-width: 768px) {
+@media (max-width:1200px) and (min-width: 768px) {
      .container {
           padding: clamp(0.75rem, 8vw, 1.5rem);
      }
@@ -123,5 +123,32 @@
 
      .subtitle {
           font-size: clamp(1.05rem, 2vw, 1.55rem);
+     }
+}
+
+@media (max-height: 400px) {
+     .about {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+     }
+
+     .icon {
+          width: clamp(35%, 40%, 45%);
+     }
+
+     .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: left;
+          width: clamp(50%, 55%, 60%);
+          padding: clamp(0.5rem, 2vw, 1rem);
+     }
+
+     .subtitle {
+          display: none;
      }
 }

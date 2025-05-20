@@ -8,6 +8,7 @@
 
 .container_item {
   /* scroll-snap-align: start; */
-  min-height: 600px;
-  height: 90dvh;
+  /* min-height: 600px;
+  height: 90dvh; */
+  height: clamp(90vh, 600px, 220vh);
 }

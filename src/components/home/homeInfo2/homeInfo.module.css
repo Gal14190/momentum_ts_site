@@ -190,7 +190,7 @@
 
   .picture {
     width: 48%;
-    height: 80%;
+    height: clamp(200px, 45vh, 45vh);
   }
 
   .about {

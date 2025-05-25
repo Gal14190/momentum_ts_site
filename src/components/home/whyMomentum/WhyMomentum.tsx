@@ -21,9 +21,6 @@ const WhyMomentum = () => {
   const currentYear = new Date().getFullYear();
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [visibleStates, setVisibleStates] = useState(
-    new Array(expertise.length).fill(false)
-  );
 
   useEffect(() => {
     const updateColumns = () => {
@@ -35,35 +32,6 @@ const WhyMomentum = () => {
 
     window.addEventListener('resize', updateColumns);
     return () => window.removeEventListener('resize', updateColumns);
-  }, []);
-
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const sectionEntry = entries.find((entry) => entry.target === sectionRef.current);
-        if (sectionEntry?.isIntersecting) {
-          const interval = setInterval(() => {
-            setVisibleStates((prev) => {
-              const nextVisible = [...prev];
-              const nextIndex = nextVisible.findIndex((v) => !v);
-              if (nextIndex === -1) {
-                clearInterval(interval);
-                return nextVisible;
-              }
-              nextVisible[nextIndex] = true;
-              return nextVisible;
-            });
-          }, 50);
-        } else {
-          setVisibleStates(new Array(expertise.length).fill(false));
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
   }, []);
 
   return (
@@ -84,7 +52,7 @@ const WhyMomentum = () => {
               key={index}
               ref={(el) => { cardRefs.current[index] = el; }}
               data-index={index}
-              className={`${classes.card} ${visibleStates[index] ? classes.visible : ''} ${isLastAlone ? classes.fullWidth : ''}`}
+              className={`${classes.card} ${classes.visible} ${isLastAlone ? classes.fullWidth : ''}`}
             >
               <h4 className={classes.cardTitle}>{item.title}</h4>
               <p className={classes.cardDescription}>{item.description}</p>
@@ -95,7 +63,7 @@ const WhyMomentum = () => {
       </div>
       <div className={`${classes.grid} ${classes.momentum}`}>
         <div
-        style={{background:"rgb(196, 237, 255)"}}
+          style={{ background: "rgb(196, 237, 255)" }}
           className={`${classes.card} ${classes.visible}`}
         >
           <h4 className={classes.cardTitle}>Momentum Tailored Solutions</h4>

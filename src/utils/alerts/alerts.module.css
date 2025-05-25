@@ -1,0 +1,66 @@
+.alert {
+    background-color: #000000b2;
+    color: var(--main-text-color);
+}
+
+.alert input {
+    max-width: 70%;
+    margin: 1rem auto 0;
+}
+
+.alertComponent {
+    text-align: left;
+    padding-top: 0.7rem;
+    max-height: 30vh;
+    overflow: auto;
+}
+
+.alertComponent .errorPath {
+    font-family: monospace;
+    background-color: #fff2;
+    padding: 0.2rem;
+    border-radius: 0.4rem;
+    margin-top: 0.2rem;
+}
+
+.alertComponent .errorMessage {
+    display: block;
+    margin: 0.2rem 2rem 0.4rem;
+    color: #f27474;
+}
+
+.toast {
+    color: white !important;
+    width: 70% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0.8rem 1.2rem !important;
+    background-color: rgba(var(--main-background-color), 0.6) !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    font-size: 0.875rem !important;
+    font-weight: lighter !important;
+    backdrop-filter: blur(5px) !important;
+    
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}

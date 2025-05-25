@@ -1,0 +1,144 @@
+/* Footer.module.css */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  background: rgba(51, 51, 51, 0.95);
+  color: #f8fafc;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.section {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #e2e8f0;
+}
+
+.linkList,
+.contactList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.linkItem {
+  /* אפשר להוסיף ריווח ותיחום במידת הצורך */
+}
+
+.link {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #38bdf8;
+}
+
+.contactList li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.iconLink {
+  width: 32px;
+  height: 32px;
+}
+
+.iconImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s;
+}
+
+.iconImage:hover {
+  transform: scale(1.1);
+}
+
+.backToTop {
+  position: absolute;
+  top: -1.5rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #f8fafc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.backToTop:hover {
+  transform: translateY(-4px);
+}
+
+.copy {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .backToTop {
+    position: static;
+    margin: 1rem 0;
+  }
+
+  .copy {
+    margin-top: 1.5rem;
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "welcome": "Welcome",
+  "language": "Language",
+  "home": "Home",
+  "about": "About",
+  "contact": "Contact",
+  "login": "Login",
+  "logout": "Logout",
+  "signup": "Sign Up",
+  "profile": "Profile",
+  "settings": "Settings",
+  "help": "Help",
+  "search": "Search",
+  "save": "Save",
+  "cancel": "Cancel",
+  "submit": "Submit",
+  "delete": "Delete",
+  "update": "Update",
+  "edit": "Edit",
+  "confirm": "Confirm",
+  "yes": "Yes",
+  "no": "No",
+  "next": "Next",
+  "previous": "Previous",
+  "error": "Error",
+  "success": "Success",
+  "loading": "Loading...",
+  "no_results": "No results found",
+  "please_wait": "Please wait...",
+  "language_english": "English",
+  "language_hebrew": "Hebrew",
+  "language_russian": "Russian",
+  "language_change": "Change Language",
+  "welcome_message": "Welcome to our application!",
+  "page_not_found": "Page not found",
+  "go_back": "Go back",
+  "dashboard": "Dashboard",
+  "notifications": "Notifications",
+  "messages": "Messages",
+  "new_message": "New Message",
+  "view_all": "View All",
+  "emptyAlert": "No Alerts",
+  "read_more": "Read More",
+  "close": "Close",
+  "retry": "Retry",
+  "download": "Download",
+  "upload": "Upload",
+  "add_new": "Add New",
+  "remove": "Remove",
+  "details": "Details",
+  "home_title": "Welcome to our platform",
+  "about_description": "Learn more about us",
+  "contact_us": "Contact Us",
+  "terms_conditions": "Terms and Conditions",
+  "privacy_policy": "Privacy Policy",
+  "logout_confirmation": "Are you sure you want to log out?",
+  "welcome_back": "Welcome back!",
+  "forgot_password": "Forgot your password?",
+  "reset_password": "Reset Password",
+  "email": "Email",
+  "password": "Password",
+  "username": "Username",
+  "new_user": "New User?",
+  "create_account": "Create an Account",
+  "invalid_credentials": "Invalid username or password",
+  "account_settings": "Account Settings",
+  "theme": "Theme",
+  "dark_mode": "Dark Mode",
+  "light_mode": "Light Mode",
+  "feedback": "Feedback",
+  "send_feedback": "Send Feedback",
+  "thank_you": "Thank you!",
+  "back_to_home": "Back to Home",
+  "view_profile": "View Profile",
+  "logout_message": "You have been logged out",
+  "welcome_admin": "Welcome, Admin",
+  "user_management": "User Management",
+  "create": "Create",
+  "view": "View",
+  "update_profile": "Update Profile",
+  "notification_settings": "Notification Settings",
+  "language_settings": "Language Settings",
+  "security_settings": "Security Settings",
+  "account_security": "Account Security",
+  "recent_activities": "Recent Activities",
+  "access_denied": "Access Denied",
+  "404_message": "The page you are looking for does not exist.",
+  "no_permission": "You don't have permission to access the",
+  "invalidData": "Invalid Data",
+  "areYouSure": "Are you sure?",
+  "changesWillNotBeSaved": "All your changes will not be saved!",
+  "saved": "Saved!",
+  "notSaved": "Changes are not saved",
+  "enter": "Enter",
+  "done": "Done",
+  "unknown": "Unknown",
+  "chooseRole": "Choose role",
+  "roleSuperAdmin": "Super Admin",
+  "roleLocalAdmin": "Local Admin",
+  "roleUser": "User",
+  "chooseArea": "Choose area",
+  "alreadyConnected": "You are connected",
+  "haveAnotherAccount": "Have another account?",
+  "role": "Role",
+  "userNotFound": "User Not Found",
+  "please": "Please",
+  "signIn": "Sign In",
+  "userInterface": "User Interface",
+  "currentUser": "Current user:",
+  "createUser": "Create User",
+  "usersTable": "Users Table",
+  "users": "Users",
+  "send": "Send",
+  "local-admin": "Local Admin",
+  "super-admin": "Super Admin",
+  "user": "User",
+  "id": "Id",
+  "location": "Location",
+  "actions": "Actions",
+  "live": "Live",
+  "delay": "Delay",
+  "copy": "Copy",
+  "dataCopied": "Data copied to clipboard!",
+  "copyError": "Error copying data to clipboard",
+  "invalidObject": "Invalid object",
+  "true": "True",
+  "false": "False",
+  "warning": "Warning",
+  "uploadFile": "Upload File",
+  "areYouSureDeleteAll": "Are you sure you want to delete all?",
+  "noAreaToUser": "there is no areas, please create a new one for your account",
+  "ip": "IP",
+  "wifiPassword": "WiFi Password",
+  "signalStrength": "Signal Strength",
+  "locations": "Locations",
+  "latitude":"latitude",
+  "longitude":"longitude",
+  "nodes": "Nodes",
+  "nodesList": "Nodes Table",
+  "addNode": "Add Node",
+  "filterByStatus": "Filter by Status",
+  "all": "All",
+  "regular": "Regular",
+  "time": "Time",
+  "title": "Title",
+  "nameAreas": "Name Areas",
+  "areas": "Areas",
+  "areasTable": "Areas List",
+  "addArea": "Add Area",
+  "areaName": "Area Name",
+  "advanced": "Advanced",
+  "status": "Status",
+  "defaultAreaName": "Area 3",
+  "defaultLocation": "(1.1, 2.2)",
+  "errorMessage": "An error occurred while loading the data.",
+  "path": "Path",
+  "nodeTitle": "Node {{index}}",
+  "droneTitle": "Drone {{index}}",
+  "areaTitle": "Area {{index}}",
+  "error-massage": {
+    "badRequest": "Bad Request: The server could not understand the request.",
+    "unauthorized": "Unauthorized: Authentication is required.",
+    "forbidden": "Forbidden: You do not have permission to access this resource.",
+    "notFound": "Not Found: The requested resource could not be found.",
+    "internalServerError": "Internal Server Error: Something went wrong on the server.",
+    "badGateway": "Bad Gateway: The server received an invalid response.",
+    "serviceUnavailable": "Service Unavailable: The server is currently unavailable.",
+    "unexpectedStatus": "Unexpected status: {{status}}",
+    "noResponse": "No response from server.",
+    "unknown": "Unknown error occurred.",
+    "validationError": "Validation Error: {{issues}}"
+  },
+  "websocket": {
+    "connectedSuccessfully": "Connected successfully",
+    "invalidServerMessage": "Invalid server message",
+    "connectionLostReconnecting": "Connection lost, reconnecting...",
+    "persistentConnectionError": "Persistent connection error"
+  },
+  "login-services": {
+    "success": "Logged in successfully",
+    "invalidCredentials": "Wrong email or password"
+  },
+  "logout-services": {
+    "success": "Logged out successfully"
+  },
+  "user-services": {
+    "unauthorized": "Unauthorized",
+    "created": "User created successfully",
+    "notFound": "User not found",
+    "fetched": "Got users successfully"
+  },
+  "role-services": {
+    "validationSuccess": "Role validated successfully",
+    "validationFailed": "Role validation failed",
+    "validationError": "Error validating role"
+  },
+  "settings-services": {
+    "unauthorized": "Unauthorized",
+    "saved": "Settings saved successfully",
+    "fetched": "Settings fetched successfully",
+    "invalid": "Invalid settings"
+  },
+  "node-services": {
+    "unauthorized": "Unauthorized",
+    "addedSuccessfully": "Node added successfully",
+    "deletedSuccessfully": "Node deleted successfully",
+    "fetchedSuccessfully": "Nodes fetched successfully",
+    "invalidData": "Invalid node data"
+  },
+  "drones": {
+    "invalidChunk": {
+      "title": "Invalid drone chunk received",
+      "message": "Data: {{data}}"
+    }
+  },
+  "alerts": {
+    "invalidChunk": {
+      "title": "Invalid alert chunk received",
+      "message": "Data: {{data}}"
+    }
+  },
+  "area-services": {
+    "unauthorized": "Unauthorized",
+    "savedSuccessfully": "Area saved successfully",
+    "fetchedSuccessfully": "Areas fetched successfully",
+    "invalidData": "Invalid area data"
+  },
+  "validation": {
+    "mapURL": {
+      "description": "Invalid mapUrl"
+    },
+    "name": {
+      "max": "Name must not exceed 100 characters",
+      "description": "A general name field for entities like Target, Area, or Node"
+    },
+    "radius": {
+      "positive": "Radius must be a positive number",
+      "description": "Radius for circles or zones"
+    },
+    "frequency": {
+      "positive": "Frequency must be a positive number",
+      "description": "Operational frequency of devices"
+    },
+    "deviceType": {
+      "required": "Device type cannot be empty",
+      "description": "The type of the device (e.g., drone, node, etc.)"
+    },
+    "droneID": {
+      "required": "Drone ID cannot be empty",
+      "description": "Unique identifier for the drone"
+    },
+    "node": {
+      "idDescription": "Unique identifier for the node",
+      "statusDescription": "Node status: true if online",
+      "description": "Represents a node with location and operational status"
+    },
+    "flyZone": {
+      "description": "An array of points defining the fly zone"
+    },
+    "circle": {
+      "centerDescription": "The center point of the circle",
+      "description": "Represents a circle defined by a center point and radius"
+    },
+    "area": {
+      "boundaryDescription": "The boundary of the area (geometry data)",
+      "description": "Represents an area with a name and defined boundary"
+    },
+    "drone": {
+      "description": "Represents a drone with unique details"
+    },
+    "id": {
+      "description": "A unique identifier for a record or entity"
+    },
+    "userId": {
+      "description": "A unique identifier for a user"
+    },
+    "action": {
+      "max": "Action must not exceed 50 characters",
+      "description": "A description of the action performed (e.g., 'create', 'update')"
+    },
+    "tableName": {
+      "max": "Table name must not exceed 100 characters",
+      "description": "The name of the table affected by the action"
+    },
+    "recordId": {
+      "description": "The ID of the record in the affected table"
+    },
+    "details": {
+      "description": "A JSON object containing additional details about the action"
+    },
+    "timestamp": {
+      "description": "The timestamp when the action or event occurred"
+    },
+    "alertStatus": {
+      "description": "The status of the alert ('suc' = success, 'err' = error, 'reg' = regular)"
+    },
+    "isoDateString": {
+      "invalidFormat": "Invalid date-time format. Use ISO 8601 format.",
+      "description": "A valid ISO 8601 formatted date string"
+    },
+    "auditLog": {
+      "description": "Represents an audit log entry"
+    },
+    "alert": {
+      "description": "Represents an alert with time, title, and status",
+      "timeDescription": "The time the alert was created",
+      "titleRequired": "Title cannot be empty",
+      "titleDescription": "The title of the alert",
+      "messageRequired": "Message cannot be empty",
+      "messageDescription": "The message or description of the alert"
+    },
+    "token": {
+      "min": "The token must be at least 10 characters long",
+      "max": "The token must not exceed 500 characters",
+      "description": "Optional authorization token (e.g., JWT)"
+    },
+    "statusCode": {
+      "min": "The status code must be at least 100 (valid HTTP status)",
+      "max": "The status code must be at most 599 (valid HTTP status)",
+      "description": "HTTP status code, e.g., 200 for success, 400 for client error"
+    },
+    "message": {
+      "required": "Message cannot be empty",
+      "description": "A human-readable description of the request or response status"
+    },
+    "data": {
+      "description": "Payload or data that can be any type"
+    },
+    "areaName": {
+      "max": "Area name must not exceed 50 characters",
+      "description": "The name of the area this setting belongs to"
+    },
+    "ipAddress": {
+      "invalid": "Invalid IP address format",
+      "description": "IPv4 address of the system"
+    },
+    "wifiPassword": {
+      "max": "WiFi password cannot exceed 255 characters",
+      "description": "WiFi network password for the system"
+    },
+    "signalStrength": {
+      "min": "Signal strength cannot be less than 0",
+      "max": "Signal strength cannot exceed 100",
+      "description": "Signal strength as a percentage (0-100)"
+    },
+    "username": {
+      "min": "Username must be at least 5 characters",
+      "max": "Username must be less than 20 characters",
+      "regex": "Username can only contain letters, numbers, and underscores",
+      "description": "The unique username of the user"
+    },
+    "password": {
+      "min": "Password must be at least 8 characters",
+      "uppercase": "Password must contain at least one uppercase letter",
+      "lowercase": "Password must contain at least one lowercase letter",
+      "number": "Password must contain at least one number",
+      "special": "Password must contain at least one special character",
+      "description": "The password for the user, between 8 and 18 characters"
+    },
+    "role": {
+      "description": "User roles in the system"
+    },
+    "roleValidateInput": {
+      "token": "Authorization token used for validation"
+    },
+    "userData": {
+      "role": "The role of the user in the system"
+    }
+  }
+}

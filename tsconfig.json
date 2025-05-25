@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {"name": "typescript-tslint-plugin"},
+      {"name": "typescript-plugin-css-modules"},
+    ],
     "target": "es5",
     "lib": [
       "dom",

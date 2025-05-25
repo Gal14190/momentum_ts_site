@@ -21,6 +21,7 @@ const expertise = [
 ];
 
 const WhyMomentum = () => {
+  const currentYear = new Date().getFullYear();
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [visibleStates, setVisibleStates] = useState(
@@ -57,22 +58,47 @@ const WhyMomentum = () => {
 
   return (
     <div className={classes.container} ref={sectionRef}>
-      <h2 className={classes.mainTitle}>Why Momentum?</h2>
-      <p className={classes.subtitle}>Momentum Tailored Solution Ltd.</p>
-      <h3 className={classes.sectionTitle}>Areas of Expertise</h3>
+        <h2 className={classes.mainTitle}>Why Momentum?</h2>
+        <p className={classes.subtitle}>Momentum Tailored Solution Ltd.</p>
 
-      <div className={classes.grid}>
-        {expertise.map((item, index) => (
-          <div
-            key={index}
-            ref={(el) => { cardRefs.current[index] = el; }}
-            data-index={index}
-            className={`${classes.card} ${visibleStates[index] ? classes.visible : ''}`}
-          >
-            <h4 className={classes.cardTitle}>{item.title}</h4>
-            <p className={classes.cardDescription}>{item.description}</p>
-          </div>
-        ))}
+        <h3 className={classes.sectionTitle}>Areas of Expertise</h3>
+        <div className={classes.grid}>
+          {expertise.map((item, index) => (
+            <div
+              key={index}
+              ref={(el) => { cardRefs.current[index] = el; }}
+              data-index={index}
+              className={`${classes.card} ${visibleStates[index] ? classes.visible : ''}`}
+            >
+              <h4 className={classes.cardTitle}>{item.title}</h4>
+              <p className={classes.cardDescription}>{item.description}</p>
+            </div>
+          ))}
+        </div>
+
+      <div className={classes.section}>
+        <h4 className={classes.sectionTitle}>Contact Information</h4>
+        <ul className={classes.contactList}>
+          {/* <li>
+              <span className={classes.icon}>📍</span>
+              123 Main St, Tel Aviv, Israel
+            </li> */}
+          <li>
+            {/* <span className={classes.icon}>📞</span> */}
+            <a href="tel:+972553044007" className={classes.link}>
+              +972 553-044-007
+            </a>
+          </li>
+          <li>
+            {/* <span className={classes.icon}>✉️</span> */}
+            <a href="mailto:contact@momentumtailoredsolutions.com" className={classes.link}>
+              Contact@MomentumTD.com
+            </a>
+          </li>
+        </ul>
+        <div className={classes.copy}>
+          © {currentYear} Momentum Tailored Solution Ltd. All rights reserved.
+        </div>
       </div>
     </div>
   );

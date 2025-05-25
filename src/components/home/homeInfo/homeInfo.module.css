@@ -20,7 +20,7 @@
      justify-content: space-between;
      width: 100%;
      /* make it at least tall enough for icon + text */
-     height: clamp(200px, 40vh, 500px);
+     height: clamp(200px, 30vh, 350px);
      padding: clamp(0.5rem, 3vw, 1.5rem);
      box-sizing: border-box;
 }
@@ -46,7 +46,7 @@
 
 .picture {
      width: 100%;
-     height: clamp(200px, 30vh, 400px);
+     height: clamp(200px, 45vh, 450px);
      background-image: url('../../../assets/images/space/space_background3-min.png');
      background-size: cover;
      background-position: center;
@@ -94,6 +94,10 @@
 
      .text {
           text-align: center;
+     }
+
+     .subtitle {
+          display: none;
      }
 }
 

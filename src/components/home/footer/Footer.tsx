@@ -1,57 +1,29 @@
-import React, { useEffect, useState, RefObject } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import classes from './footer.module.css';
+import { motion } from 'framer-motion';
 
-interface FooterProps {
-  /**
-   * אם יש אלמנט גלילה פנימי (לדוגמה Home), תעביר כאן ref לתוכו
-   * כדי למדוד את מצב הגלילה שלו במקום גלילת החלון
-   */
-  scrollContainerRef?: RefObject<HTMLElement>;
-}
-
-const Footer: React.FC<FooterProps> = ({ scrollContainerRef }) => {
-  const [showFooter, setShowFooter] = useState(false);
+const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
-  const quickLinks = [
-    { to: '/', label: 'Home' },
-    { to: '/about', label: 'About Us' },
-    { to: '/services', label: 'Services' },
-    { to: '/contact', label: 'Contact' },
-    // הוסף קישורים נוספים לפי הצורך
-  ];
+  // const quickLinks = [
+  //   { to: '/', label: 'Home' },
+  //   { to: '/about', label: 'About Us' },
+  //   { to: '/services', label: 'Services' },
+  //   { to: '/contact', label: 'Contact' },
+  //   // הוסף קישורים נוספים לפי הצורך
+  // ];
 
-  useEffect(() => {
-    // קובע את היעד שעליו מאזינים לאירוע גלילה
-    const target = scrollContainerRef?.current ?? window;
-    const isAtBottom = () => {
-      if (scrollContainerRef?.current) {
-        const el = scrollContainerRef.current;
-        return el.scrollTop + el.clientHeight >= el.scrollHeight - 20;
-      }
-      return window.innerHeight + window.scrollY >= document.documentElement.offsetHeight - 20;
-    };
-
-    const handleScroll = () => setShowFooter(isAtBottom());
-
-    target.addEventListener('scroll', handleScroll as EventListener);
-    // בדיקה ראשונית
-    handleScroll();
-
-    return () => target.removeEventListener('scroll', handleScroll as EventListener);
-  }, [scrollContainerRef]);
 
   return (
-    <footer
+    <motion.footer
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
       className={classes.footer}
-      style={{
-        transform: showFooter ? 'translateY(0)' : 'translateY(100%)'
-      }}
     >
       <div className={classes.container}>
         {/* Quick Links */}
-        <div className={classes.section}>
+        {/* <div className={classes.section}>
           <h4 className={classes.sectionTitle}>Quick Links</h4>
           <ul className={classes.linkList}>
             {quickLinks.map(({ to, label }) => (
@@ -62,33 +34,33 @@ const Footer: React.FC<FooterProps> = ({ scrollContainerRef }) => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* Contact Info */}
         <div className={classes.section}>
           <h4 className={classes.sectionTitle}>Contact Information</h4>
           <ul className={classes.contactList}>
-            <li>
+            {/* <li>
               <span className={classes.icon}>📍</span>
               123 Main St, Tel Aviv, Israel
-            </li>
+            </li> */}
             <li>
               <span className={classes.icon}>📞</span>
-              <a href="tel:+972123456789" className={classes.link}>
-                +972 1-234-567-89
+              <a href="tel:+972553044007" className={classes.link}>
+                +972 553-044-007
               </a>
             </li>
             <li>
               <span className={classes.icon}>✉️</span>
-              <a href="mailto:info@momentum.com" className={classes.link}>
-                info@momentum.com
+              <a href="mailto:contact@momentumtailoredsolutions.com" className={classes.link}>
+                contact@MomentumTDs.com
               </a>
             </li>
           </ul>
         </div>
 
         {/* Social Media */}
-        <div className={classes.section}>
+        {/* <div className={classes.section}>
           <h4 className={classes.sectionTitle}>Follow Us</h4>
           <div className={classes.socials}>
             <a
@@ -116,7 +88,7 @@ const Footer: React.FC<FooterProps> = ({ scrollContainerRef }) => {
               <img src="/icons/in.svg" alt="LinkedIn" className={classes.iconImage} />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Back to Top */}
@@ -131,7 +103,7 @@ const Footer: React.FC<FooterProps> = ({ scrollContainerRef }) => {
       <div className={classes.copy}>
         © {currentYear} Momentum Tailored Solution Ltd. All rights reserved.
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

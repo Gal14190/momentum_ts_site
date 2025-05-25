@@ -190,12 +190,12 @@
 
   .picture {
     width: 48%;
-    height: clamp(200px, 45vh, 45vh);
+    height: clamp(200px, 70vh, 75vh);
   }
 
   .about {
     width: 46%;
-    height: 80%;
+    height: clamp(200px, 70vh, 75vh);
     flex-direction: column;
     justify-content: center;
     align-items: center;

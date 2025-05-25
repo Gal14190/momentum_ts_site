@@ -119,7 +119,7 @@ const WhyMomentum = () => {
           <li>
             {/* <span className={classes.icon}>✉️</span> */}
             <a href="mailto:contact@momentumtailoredsolutions.com" className={classes.link}>
-              Contact@MomentumTD.com
+              contact@momentumtailoredsolutions.com
             </a>
           </li>
         </ul>

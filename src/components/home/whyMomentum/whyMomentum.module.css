@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 94%;
+  min-height: 94%;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
@@ -44,6 +44,14 @@
   width: 100%;
   max-width: 1200px;
   overflow-y: scroll;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.momentum {
+  margin: 1.5rem 0;
 }
 
 /* Card Base */
@@ -135,5 +143,9 @@
 @media screen and (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .fullWidth {
+    grid-column: 1 / -1;
   }
 }

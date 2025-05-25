@@ -9,7 +9,6 @@
      width: 100%;
      padding: clamp(1rem, 5vw, 3rem);
      box-sizing: border-box;
-     overflow: hidden;
 }
 
 .about {
@@ -19,8 +18,6 @@
      align-items: flex-start;
      justify-content: space-between;
      width: 100%;
-     /* make it at least tall enough for icon + text */
-     height: clamp(200px, 30vh, 350px);
      padding: clamp(0.5rem, 3vw, 1.5rem);
      box-sizing: border-box;
 }
@@ -46,7 +43,7 @@
 
 .picture {
      width: 100%;
-     height: clamp(200px, 45vh, 450px);
+     height: clamp(200px, 45vh, 45vh);
      background-image: url('../../../assets/images/space/space_background3-min.png');
      background-size: cover;
      background-position: center;

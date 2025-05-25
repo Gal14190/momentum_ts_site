@@ -9,7 +9,7 @@
 .picture {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   width: 95%;
-  height: 50%;
+  height: clamp(200px, 45vh, 45vh);
   background-image: url('../../../assets/images/space/space_background4-min.png');
   background-size: cover;
   background-position: center;
@@ -88,7 +88,7 @@
   }
 
   .picture {
-    height: 50%;
+    height: clamp(200px, 45vh, 45vh);
     margin-bottom: 30px;
   }
 
